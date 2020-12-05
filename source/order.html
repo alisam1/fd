@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>FreshDress</title>
+</head>
+<body>
+
+
+    <div class="order__logo container">
+        <img src="/img/logo_mobile.svg" alt="logo_mobile">
+    </div>
+
+    <section class="order container">
+
+        <h1 class="order__title">Оформление заказа</h1>
+
+        <div class="order__reg">
+            <p><a href="#order-form" class="header__link header__link-reg popup-modal">Войдите <span>или</span> зарегистрируйтесь</a> для нового оформления заказа</p>
+
+            <div id="order-form" class="mfp-hide white-popup-block">
+                <p><a class="popup-modal-dismiss" href="#"><img src="/img/basket_close.svg" alt=""></a></p>
+                <div class="wrap">
+                    <ul class="tabs group">
+                    <li><a class="active" href="#/one">Авторизация</a></li>
+                    <li><a href="#/two">Регистрация</a></li>
+                    </ul>
+                    
+                    <div id="terms">
+                    <div id="one">
+                        <form>
+                            <input type="email" placeholder="Email" required="">
+                            <input type="password" placeholder="Пароль" required="">
+                            <input type="submit" value="Войти">
+                        </form>
+                        <a class="header-mobile__link popup-with-form" href="#rec-password">Восстановить пароль</a>
+
+                        <div id="rec-password" class="white-popup-block mfp-hide">
+                            <p><a class="popup-modal-dismiss" href="#"><img src="/img/basket_close.svg" alt=""></a></p>
+                            <h3 class="header-mobile__login-title">Восстановление пароля</h3>
+
+                            <div class="header-mobile__form">
+                                <form>
+                                    <p>Введите адрес электронной почты, на который будет отравлена ссылка для восстановления пароля</p>
+                                    <input type="email" placeholder="Email" required="">
+                                    <input type="submit" value="Отправить">
+                                    <a href="">Вернуться к авторизации</a>
+                                </form>
+                            </div>
+                    </div>
+                    </div>
+                    <div id="two">
+                        <form>
+                            <input type="email" placeholder="Email" required="">
+                            <input type="password" placeholder="Пароль" required="">
+                            <input type="password" placeholder="Пароль повторно" required="">
+                            <input type="submit" value="Зарегистрироваться">
+                            <p>Нажимая кнопку Зарегистрироваться, я даю согласие на обработку и передачу моих персональных данных</p>
+                        </form>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="order__all">
+
+        <div class="order__form">
+
+            <div class="step-app" id="demo">
+                <ul class="step-steps">
+                <li data-step-target="step1">
+                    <svg width="34" height="20" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.6865 17.3165L30.791 4.283H22.368V0.0094986H0.313477V17.3165H4.53448C4.77498 18.829 6.08498 19.9905 7.66448 19.9905C9.24398 19.9905 10.5535 18.8295 10.7945 17.3165H21.368H22.368H23.5745C23.815 18.829 25.1255 19.9905 26.7055 19.9905C28.285 19.9905 29.5945 18.8295 29.8355 17.3165H33.6865ZM7.66448 18.99C6.46648 18.99 5.49098 18.0155 5.49098 16.816C5.49098 15.618 6.46598 14.642 7.66448 14.642C8.86298 14.642 9.83798 15.6175 9.83798 16.816C9.83798 18.0155 8.86298 18.99 7.66448 18.99ZM21.368 16.3165H10.7945C10.554 14.804 9.24398 13.6425 7.66448 13.6425C6.08498 13.6425 4.77548 14.8035 4.53448 16.3165H1.31348V1.0095H21.368V4.283V16.3165ZM26.7055 18.99C25.507 18.99 24.531 18.0155 24.531 16.816C24.531 15.618 25.5065 14.642 26.7055 14.642C27.9035 14.642 28.879 15.6175 28.879 16.816C28.879 18.0155 27.904 18.99 26.7055 18.99ZM26.7055 13.6425C25.1255 13.6425 23.8155 14.8035 23.5745 16.3165H22.368V5.283H29.989L30.8985 9.3785H26.5465V9.878H31.01L32.44 16.316H29.835C29.5945 14.8035 28.285 13.6425 26.7055 13.6425Z" fill="#1B1B1B"/>
+                    </svg>
+                </li>
+                <li data-step-target="step2">
+                    <svg width="34" height="20" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 9.5C11.1046 9.5 12 8.60457 12 7.5C12 6.39543 11.1046 5.5 10 5.5C8.89543 5.5 8 6.39543 8 7.5C8 8.60457 8.89543 9.5 10 9.5Z" stroke="#949494" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 15V15C6 12.7934 7.78879 11 9.99538 11V11V11C12.2045 11 14 12.7909 14 15V15" stroke="#949494"/>
+                        <rect x="0.5" y="0.5" width="33" height="19" rx="1.5" stroke="#949494"/>
+                        <rect x="18" y="7" width="11" height="1" fill="#949494"/>
+                        <rect x="18" y="11" width="8" height="1" fill="#949494"/>
+                    </svg>
+                </li>
+                <li data-step-target="step3">
+                    <svg width="34" height="20" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="33" height="19" rx="1.5" stroke="#949494"/>
+                        <rect x="1" y="4" width="32" height="1" fill="#949494"/>
+                        <rect x="25" y="14" width="5" height="1" fill="#949494"/>
+                    </svg>   
+                </li>
+                </ul>
+                <div class="step-content">
+                <div class="order__step step-tab-panel" id="tab-order" data-step="step1">
+                    <h3>1. Доставка</h3>
+                    <p>Введите данные для доставки</p>
+                    <form class="personal__data-form custom-form custom-form--order frmInfoFirst" name="frmInfoFirst" id="frmInfoFirst">
+                        <div class="personal__data-form__name">
+                            <div class="custom-form-group">
+                                <input type="text" name="name" class="custom-form-control error" data-val="" id="order__country">
+                                <span class="custom-input-placeholder">Страна</span>
+                                <span class="error_name error">Не указана Страна</span>
+                            </div>
+                            <div class="custom-form-group">
+                                <input type="text" name="name" class="custom-form-control error" data-val="" id="order__city">
+                                <span class="custom-input-placeholder">Город</span>
+                                <span class="error_name error">Не указан Город</span>
+                            </div>
+                        </div>
+                        <div class="personal__data-form__contacts">
+                            <div class="custom-form-group">
+                                <input type="text" name="text" class="custom-form-control error" data-val=""  id="order__zip">
+                                <span class="custom-input-placeholder">Индекс</span>
+                                <span class="error_name error">Не указан Индекс</span>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="order__info">
+                        <form>
+                            <p>Выберите способ доставки</p>
+                            <div class="order__radio order__radio-pickup">
+                                <div class="order__radio-content">
+                                    <input type="radio" name="radio" value="1" id="contactChoice1">
+                                    <label for="contactChoice1"><span>Самовывоз</span><span class="order__radio-price">бесплатно</span><span class="order__radio-days">сегодня</span></label>
+                                </div>
+                                    <p>Получение заказа в бутике по адресу: Малодетскосельский проспект, 31</p>
+                            </div>
+                                
+                                <div class="order__radio-content">
+                                    <input type="radio" name="radio" value="2" id="contactChoice2">
+                                    <label for="contactChoice2"><span>СДЭК</span><span class="order__radio-price">320 р.</span><span class="order__radio-days">4-6 дней</span></label>
+                                </div>
+                            
+                                <div class="order__radio-content">
+                                    <input type="radio" name="radio" value="3" id="contactChoice3">
+                                    <label for="contactChoice3"><span>Почта России</span><span class="order__radio-price">540 р.</span><span class="order__radio-days">10-12 дней</span></label>
+                                </div>
+
+                             <div class="order__adress">
+                                 <div class="order__street">
+                                    <div class="custom-form-group">
+                                        <input type="text" name="text" class="custom-form-control error" data-val=""  id="order__adress-street">
+                                        <span class="custom-input-placeholder">Улица</span>
+                                        <span class="error_name error">Не указана Улица</span>
+                                    </div>
+                                    <div class="custom-form-group">
+                                        <input type="text" name="text" class="custom-form-control error" data-val="" id="order__adress-house">
+                                        <span class="custom-input-placeholder">Дом</span>
+                                        <span class="error_name error">Не указан Дом</span>
+                                    </div>
+                                 </div>
+                                 <div class="order__street">
+                                    <div class="custom-form-group">
+                                        <input type="text" name="text" class="custom-form-control error" data-val="">
+                                        <span class="custom-input-placeholder">Корпус</span>
+                                        <span class="error_name error">Не указан Корпус</span>
+                                    </div>
+                                    <div class="custom-form-group">
+                                        <input type="text" name="text" class="custom-form-control error" data-val="" id="order__adress-flat">
+                                        <span class="custom-input-placeholder">Квартира</span>
+                                        <span class="error_name error">Не указан Квартира</span>
+                                    </div>
+                                 </div>
+                                 <div class="order__text">
+                                     <p>Необязательное поле</p>
+                                    <input type="text" placeholder="Комментарий к заказу" id="order__adress-comment">
+                                 </div>
+                             </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="summary" style="display: none;"></div>
+
+                <div class="summary_contacts" style="display: none;"></div>
+
+                <div class="order__step step-tab-panel" id="tab-contacts" data-step="step2">
+                    <h3>2. Контакты получателя</h3>
+                    <form class="personal__data-form order__step-contacts custom-form custom-form--order" name="frmInfo" id="frmInfo">
+                        <div class="personal__data-form__name">
+                            <div class="custom-form-group">
+                                <input type="text" name="name" class="custom-form-control error" data-val="" id="order__name">
+                                <span class="custom-input-placeholder">Имя</span>
+                                <span class="error_name error">Не указано Имя</span>
+                            </div>
+                            <div class="custom-form-group">
+                                <input type="text" name="name" class="custom-form-control error" data-val="" id="order__surname">
+                                <span class="custom-input-placeholder">Фамилия</span>
+                                <span class="error_name error">Не указана Фамилия</span>
+                            </div>
+                        </div>
+                        <div class="personal__data-form__contacts">
+                            <div class="custom-form-group">
+                                <input type="text" name="text" class="custom-form-control error" data-val="" id="order__phone">
+                                <span class="custom-input-placeholder">Телефон</span>
+                                <span class="error_name error">Не указан Телефон</span>
+                            </div>
+                        </div>
+                        <div class="personal__data-form__contacts">
+                            <div class="custom-form-group">
+                                <input type="email" name="email" class="custom-form-control error" data-val="" id="order__email">
+                                <span class="custom-input-placeholder">Email</span>
+                                <span class="error_name error">Не указан Email</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="order__step step-tab-panel" id="tab-cost" data-step="step3">
+                    <h3>3. оплата</h3>
+                    <div class="order__cost">
+                        <p class="order__cost-name">Стоимость</p>
+                        <p class="order__cost-summa">15 500 p.</p>
+                    </div>
+                    <div class="order__cost">
+                        <p class="order__cost-name">Ваша скидка</p>
+                        <p class="order__cost-summa">-2500 p.</p>
+                    </div>
+                    <div class="order__cost">
+                        <p class="order__cost-name">Доставка</p>
+                        <p class="order__cost-summa">320 р.</p>
+                    </div>
+                    <div class="order__cost order__cost--all">
+                        <p class="order__cost-name">Итого к оплате</p>
+                        <p class="order__cost-summa">13 320 p.</p>
+                    </div>
+                    <div class="order__group">
+                        <div class="order__group-checkbox">
+                            <input id="checkbox__cost" type="checkbox">
+                            <label for="checkbox__cost">У меня есть дисконтная карта</label>
+                            <p><a href="#cost-system" class="popup-modal">Подробнее о накопительной системе</p>
+
+                            <div id="cost-system" class="system mfp-hide white-popup-block">
+                                <a class="popup-modal-dismiss basket__cross" href="#"><img src="/img/basket_close.svg" alt="close"></a>
+                                <h3 class="system__title">Накопительная система FreshDress</h3>
+                                <p class="system__description">Покупая на сумму до 30 000 руб. — ваша персональная скидка составляет 3%.</p>
+                                <p class="system__description">Далее скидка увеличивается:</p>
+                                <ul class="system__list">
+                                    <li class="system__item">от 30 000 до 50 000 руб. скидка 5%;</li>
+                                    <li class="system__item">от 50 000 до 70 000 руб. скидка 7%</li>
+                                    <li class="system__item">более 70 000 руб. скидка 10%.</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="order__group-checkbox">
+                            <input id="checkbox__sale" type="checkbox">
+                            <label for="checkbox__sale">Оформляя заказ, я принимаю условия <a href="">пользовательского соглашения</a></label>
+                        </div>
+                        <div class="order__group-checkbox">
+                            <input id="checkbox__order" type="checkbox">
+                            <label for="checkbox__order">Оформить заказ без звонка менеджера</label>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+                <div class="step-footer">
+                <button data-step-action="next" class="step-btn">Продолжить</button>
+                <button data-step-action="finish" class="step-btn">Перейти к оплате</button>
+                <div class="order__card">
+                    <img src="/img/order_visa.svg" alt="Visa">
+                    <img src="/img/order_master.svg" alt="Visa">
+                    <img src="/img/order_apay.svg" alt="Visa">
+                    <img src="/img/order_gpay.svg" alt="Visa">
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="order__basket">
+
+            <div class="basket"> 
+                <div class="basket__order-info">
+                    <h3 class="basket__order-title">Ваш заказ</h3>
+                    <div class="basket__order-quantity">3 изделия</div>
+                </div>
+                  <div class="basket__all">  
+                    <div class="basket__info">
+                        <div class="basket__card">
+                            <div class="basket__img"><img src="/img/basket_1.png" alt="basket_1"></div>
+
+                                <div class="basket__content">
+                                    <div class="basket__content-top">
+                                        <h5 class="basket__content-name"><a href="">вязанный Свитер свободного кроя с воротником</a></h5>
+                                        <p class="basket__content-art">арт. 121nab</p>
+                                    </div>
+                                    <div class="basket__content-bottom">
+                                        <p class="basket__content-sale">Цена <span>6500 р.</span></p>
+                                        <p class="basket__content-size">Размер <span>XS</span></p>
+                                        <p class="basket__content-color">Цвет <span>Электрик</span></p>
+                                        <div class="basket__content-num">Количество <button class="minus"><img src="/img/minus_icon.svg" alt="minus_icon"></button><span>1</span><button class="plus"><img src="/img/plus_icon.svg" alt="minus_icon"></button></div>
+        
+                                    </div>
+                                </div>
+                                <div class="basket__add">
+                                    <div class="basket__sale">
+                                        <p class="basket__price">6500 р.</p>
+                                    </div>
+                                    <button class="basket__delete">удалить</button>
+                                </div>
+
+                        </div>
+    
+                        <div class="basket__card">
+                            <div class="basket__img"><img src="/img/basket_2.png" alt="basket_2"></div>
+                            <div class="basket__content">
+                                <div class="basket__content-top">
+                                    <h5 class="basket__content-name"><a href="">Платье "Париж" мини, зелёное</a></h5>
+                                    <p class="basket__content-art">арт. 132nab</p>
+                                </div>
+                                <div class="basket__content-bottom">
+                                    <p class="basket__content-sale">Цена <span>6500 р.</span><span class="basket__content-sale--old">9000 р.</span></p>
+                                    <p class="basket__content-size">Размер <span>XS</span></p>
+                                    <p class="basket__content-color">Цвет <span>Зелёный</span></p>
+                                    <div class="basket__content-num">Количество <button class="minus"><img src="/img/minus_icon.svg" alt="minus_icon"></button><span>1</span><button class="plus"><img src="/img/plus_icon.svg" alt="minus_icon"></button></div>
+    
+                                </div>
+                            </div>
+                            <div class="basket__add">
+                                <div class="basket__sale">
+                                    <p class="basket__price">6500 р.</p>
+                                    <p class="basket__price basket__price--old">9000 р.</p>
+                                </div>
+                                <button class="basket__delete">удалить</button>
+                            </div>
+                        </div>
+                        <div class="basket__card">
+                            <div class="basket__img"><img src="/img/basket_2.png" alt="basket_2"></div>
+                            <div class="basket__content">
+                                <div class="basket__content-top">
+                                    <h5 class="basket__content-name"><a href="">Платье "Париж" мини, зелёное</a></h5>
+                                    <p class="basket__content-art">арт. 132nab</p>
+                                </div>
+                                <div class="basket__content-bottom">
+                                    <p class="basket__content-sale">Цена <span>6500 р.</span><span class="basket__content-sale--old">9000 р.</span></p>
+                                    <p class="basket__content-size">Размер <span>XS</span></p>
+                                    <p class="basket__content-color">Цвет <span>Зелёный</span></p>
+                                    <div class="basket__content-num">Количество <button class="minus"><img src="/img/minus_icon.svg" alt="minus_icon"></button><span>1</span><button class="plus"><img src="/img/plus_icon.svg" alt="minus_icon"></button></div>
+    
+                                </div>
+                            </div>
+                            <div class="basket__add">
+                                <div class="basket__sale">
+                                    <p class="basket__price">6500 р.</p>
+                                    <p class="basket__price basket__price--old">9000 р.</p>
+                                </div>
+                                <button class="basket__delete">удалить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket__result basket__result--order">
+                        <div class="basket__quantity basket__quantity--order">3 изделия</div>
+                        <div class="basket__cost">
+                            <p class="basket__total">Стоимость <span>15 500 p.</span></p>
+                            <p class="basket__discount">Ваша скидка <span>-2500 p.</span></p>
+                            <p class="basket__sum">Стоимость <span>13 000 p.</span></p>
+                        </div>
+                    </div>
+                    <div class="basket__promo">
+                        <div class="basket__promo-congr" style="display: none">
+                            <div class="basket__promo-congr-top">
+                                <p>Promocode!</p>
+                                <button class="basket-close"><img src="img/promocode_close.svg" alt="basket-close"></button>
+                            </div>
+                            <div class="basket__promo-congr-bottom">
+                                <span>Промокод применен!</span>
+                            </div>
+                        </div>
+                        <form>
+                            <input type="text" placeholder="Промокод или сертификат">
+                            <input class="basket-ok" type="submit" value="ок">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="order__footer">
+        <div class="question">
+            <p class="question__decription">Возникли вопросы? Свяжитесь с нами удобным для вас способом</p>
+            <div class="question__group">
+                <a href="https://wa.me/78005004884" class="question__button question__button--whatsapp" target="_blank">Написать в
+                    WhatsApp</a>
+                <a href="https://instagram.com/freshdress_shop/" target="_blank" class="question__button question__button--insta">Мы в
+                    Instagram</a>
+                <a href="" class="question__button question__button--mail" target="_blank">Эл. почта</a>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="js/magnific.js"></script>
+    <script src="js/accordeon.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/steps.js"></script>
+    <script src="js/order.js"></script>
+</body>
+</html>

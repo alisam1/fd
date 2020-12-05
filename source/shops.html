@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">   
+    <title>FreshDress</title>
+</head>
+<body>
+
+    @@include('./templates/header.html')
+
+    <main>
+
+     <div class="shops container">
+         <h1 class="shops__title">Магазины</h1>
+         <div class="vertical__tabs shops__tabs">
+            <ul class="vertical__links">
+                <li class="chosen">Москва</li>
+                <li>Санкт-Петербург</li>
+                <li>Краснодар</li>
+            </ul>
+            <div class="vertical-tabs-content-wrap">
+                <div class="vertical-tabs-content active">
+                <div class="shops__city-mobile">Москва <span class="icon"></span></div>
+                <div class="shops__info">
+                    <div class="shops__info-map"><img src="/img/shop_moscow.png" alt=""></div>
+                    <div class="shops__info-about">
+                        <div class="shops__info-content">
+                            <p class="shops__info-address">Москва, Котельническая набережная 31.</p>
+                            <p class="shops__info-time">Режим работы: с 11:00 до 21:00, без выходных.</p>
+                        </div>
+                        <a class="shops__info-open" href="">Открыть карту</a>
+                    </div>
+                    <div class="shops__info-map"><img src="/img/shop_moscow_way.png" alt=""></div>
+                    <div class="shops__info-details">
+                        <p>Метро Таганская (кольцевая) — 1 выход из метро. После стеклянных дверей налево, по прямой перейти дорогу в сторону кафе Prime. На перекрёстке снова налево и вниз по прямой до набережной.</p>
+                        <p>Вход в бутик со стороны набережной.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="vertical-tabs-content">
+                    <div class="shops__city-mobile">Санкт-Петербург <span class="icon"></span></div>
+                    <div class="shops__info">
+                        <div class="shops__info-map"><img src="/img/shop_spb.png" alt=""></div>
+                        <div class="shops__info-about">
+                            <div class="shops__info-content">
+                                <p class="shops__info-address">Санкт-Петербург, Малодетскосельский проспект 31. </p>
+                                <p class="shops__info-time">Режим работы: с 11:00 до 21:00, без выходных.</p>
+                            </div>
+                            <a class="shops__info-open" href="">Открыть карту</a>
+                        </div>
+                        <div class="shops__info-map"><img src="/img/shop_spb_way.png" alt=""></div>
+                        <div class="shops__info-details">
+                            <p>Метро Технологический институт. Выход налево,направляться по Московскому проспекту до пересечения с Малодетскосельским пр. Дойдя до перекрёстка повернуть налево. Бутик находится в первом ,угловом здании.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-tabs-content">
+                    <div class="shops__city-mobile">Краснодар <span class="icon"></span></div>
+                    <div class="shops__info">
+                        <div class="shops__info-map"><img src="/img/shop_krasnodar.png" alt=""></div>
+                        <div class="shops__info-about">
+                            <div class="shops__info-content">
+                                <p class="shops__info-address">Краснодар, ул. Красная 17.</p>
+                                <p class="shops__info-time">Режим работы: с 11:00 до 21:00, без выходных.</p>
+                            </div>
+                            <a class="shops__info-open" href="">Открыть карту</a>
+                        </div>
+                        <div class="shops__info-map"><img src="/img/shop_krasnodar_way.png" alt=""></div>
+                        <div class="shops__info-details">
+                            <p>Пересечение ул. Красной и ул. Комсомольской.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+          </div>
+     </div>
+       
+    </main>
+
+    @@include('./templates/footer.html')
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/magnific.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/shops.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/sticky.js"></script>
+    <script src="js/accordeon.js"></script>
+</body>
+</html>

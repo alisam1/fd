@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">   
+    <title>FreshDress</title>
+</head>
+<body>
+
+    @@include('./templates/header.html')
+
+    <main>
+        <section class="collection-page">
+            <h1 class="collection-page__title container">Summer and sky</h1>
+            <div class="collection-page__main">
+                <img src="/img/col_1@2x.png" alt="col_1">
+            </div>
+
+            <div class="collection-page__album container">
+                <p class="collection-page__album-description">Летний FRESH.</p>
+                <p class="collection-page__album-description">Фотографируемся в небо 💙</p>
+                <div class="collection-page__album-all">
+                    <div class="collection-page__album-group collection-page__album-group--second">
+                        <img src="/img/album_1.png" alt="album_1">
+                        <img src="/img/album_2.png" alt="album_2">
+                    </div>
+                    <div class="collection-page__album-group collection-page__album-group--one">
+                        <img src="/img/album_3.png" alt="album_3">
+                    </div>
+                    <div class="collection-page__album-group collection-page__album-group--thirty">
+                        <img src="/img/album_4.png" alt="album_4">
+                        <img src="/img/album_5.png" alt="album_5">
+                        <img src="/img/album_6.png" alt="album_6">
+                    </div>
+                </div>
+            </div>
+
+            <div class="collection-page__slider container">
+                <div class="bestsellers__top">
+
+                    <h3 class="bestsellers__title bestsellers__title-collection">Вам может быть интересно</h3>
+                    <div class="bestsellers__arrows">
+                        <div class="bestsellers__arr swiper-button-next"></div>
+                        <div class="bestsellers__arr swiper-button-prev"></div>
+                    </div>
+    
+                </div>
+    
+                <div class="bestsellers__slider">
+    
+                    <div id="swiper_album" class="swiper-container">
+    
+                        <div class="swiper-wrapper">
+    
+                          <div class="swiper-slide card__slide">
+                            <div class="card__img card__img--collection">
+                                <img src="/img/col_1.png" alt="">
+                            </div>
+                            <div class="card__info">
+                                <h3 class="collections__card-title collections__card-title--slider">Summer and sky</h3>
+                            </div>
+                          </div>
+    
+                          <div class="swiper-slide card__slide">
+                            <div class="card__img card__img--collection">
+                                <img src="/img/col_2.png" alt="">
+                            </div>
+                            <div class="card__info">
+                                <h3 class="collections__card-title collections__card-title--slider">inspired by nature</h3>
+                            </div>
+                          </div>
+    
+                          <div class="swiper-slide card__slide">
+                             <div class="card__img card__img--collection">
+                                <img src="/img/col_3.png" alt="">
+                            </div>
+                            <div class="card__info">
+                                <h3 class="collections__card-title collections__card-title--slider">opening of the beach season</h3>
+                            </div>
+                          </div>
+    
+                          <div class="swiper-slide card__slide">
+                            <div class="card__img card__img--collection">
+                                <img src="/img/col_1.png" alt="">
+                            </div>
+                            <div class="card__info">
+                                <h3 class="collections__card-title collections__card-title--slider">inspired by nature</h3>
+                            </div>
+                          </div>
+    
+                         <div class="swiper-slide card__slide">
+                            <div class="card__img card__img--collection">
+                                <img src="/img/col_2.png" alt="">
+                            </div>
+                            <div class="card__info">
+                                <h3 class="collections__card-title collections__card-title--slider">inspired by nature</h3>
+                            </div>
+                          </div>
+    
+                          <div class="swiper-slide card__slide">
+                            <div class="card__img card__img--collection">
+                                <img src="/img/col_3.png" alt="">
+                            </div>
+                            <div class="card__info">
+                                <h3 class="collections__card-title collections__card-title--slider">opening of the beach season</h3>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    @@include('./templates/footer.html')
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/magnific.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/sticky.js"></script>
+    <script src="js/accordeon.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+.greeting_modal{
+    display: none;
+    position: absolute;
+    width: 475px;
+    height: auto;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.22);
+    border-radius: 4px;
+    z-index: 10000;
+    left: 50%;
+    top: 50%;
+    margin-left: -237.5px;
+    margin-top: -380px;
+    padding-top: 12px;
+    padding-bottom: 40px;
+    &-close{
+        position: absolute;
+        right: 12px;
+        top: 20px;
+    }
+    &-logo{
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    &-img{
+        width: 100%;
+        height: 335px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    &-title{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        color: #1B1B1B;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 35px;
+    }
+    &-description{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #575757;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 12px;
+    }
+    &-form{
+        width: 70%;
+        margin: 0 auto;
+        form{
+            input{
+                text-align: center;
+            }
+            .greeting_modal-button{
+                background: #AFD83B !important;
+                color: #313131 !important;
+          }
+          .custom-input-placeholder
+          {
+              width: 100%;
+              text-align: center !important;
+              top: 25px
+          }
+          .input_filled + .custom-input-placeholder {
+                top: 0px;
+          }
+        }
+    }
+    &-alarm{
+        width: 90%;
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #949494;
+        padding: 0;
+        a{
+            color: #1B1B1B;
+        }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+     width: 100%;
+     height: auto;
+     left: 0;
+     top: 0;
+     margin-left: 0;
+     margin-top: 0;
+     padding-bottom: 20px;
+    }
+
+}

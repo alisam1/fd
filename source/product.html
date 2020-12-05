@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">   
+    <title>FreshDress</title>
+</head>
+<body>
+
+    @@include('./templates/header.html')
+
+    <main>
+
+    <section class="product-info">
+
+        <div class="product-info__slider">
+
+            <div class="slider-container">
+
+                <div class="product-info__slider-wrapper">
+                    <div class="product-info__slider-thumb">
+                        <div><img src="/img/product_1.jpg" alt=""></div>
+                        <div><img src="/img/product_2.jpg" alt=""></div>
+                        <div><img src="/img/product_3.jpg" alt=""></div>
+                        <div class="product__video"><img src="/img/product_3.jpg" alt=""></div>
+                      </div>
+    
+                    <div class="product-info__slider-disc">
+                        <span class="card__img--best">Best</span>
+                        <span class="card__img--new">New</span>
+                    </div>
+
+                      <div class="popup-gallery product-info__slider-preview">
+                        <a href="img/product_1.jpg"><img src="/img/product_1.jpg" alt=""></a>
+                        <a href="img/product_2.jpg"><img src="/img/product_2.jpg" alt=""></a>
+                        <a href="img/product_3.jpg"><img src="/img/product_3.jpg" alt=""></a>
+                        <a href="https://dev.svyataya.com/upload/iblock/a5a/a5ac6aac4a95f0074d36bf618d3787f2.mp4">
+                            <video autoplay="autoplay" loop="loop" muted="muted" playsinline="" preload="metadata" controls="controls">
+                            <source src="https://dev.svyataya.com/upload/iblock/a5a/a5ac6aac4a95f0074d36bf618d3787f2.mp4"
+                                type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+                            </video>
+                        </a>
+                      </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="product-info__characteristic container">
+
+            <div class="product-info__breadcrumbs">
+                <ul class="product-info__breadcrumbs-list">
+                    <li class="product-info__breadcrumbs-item">New collection</li>
+                    <li class="product-info__breadcrumbs-item">-</li>
+                    <li class="product-info__breadcrumbs-item"><a href="">Платья</a></li>
+                    <li class="product-info__breadcrumbs-item">-</li>
+                    <li class="product-info__breadcrumbs-item"><a href="">Вечерние</a></li>
+                </ul>
+
+            </div>
+
+            <div class="product-info__lead"> 
+                <h1 class="product-info__title">Свитер Over Size</h1>
+                <p class="product-info__like">
+                    <span class="card__img--like-black"></span>
+                </p>
+            </div>
+            <p class="product-info__art">арт. 121nab</p>
+            <div class="product-info__prices">
+            <p class="product-info__price">6 500 p.</p>
+            <p class="product-info__price-old">9 000 p.</p>
+            </div>
+
+            <div class="product-info__color">
+
+                <p class="product-info__color-name">Цвет: <span>электрик</span></p>
+                <div class="product-info__color-info">
+                    <div class="product-info__color-item">
+                        <div class="product-info__color-get" data-color="blue"></div>
+                    </div>
+                    <a class="product-info__color-item" href="">
+                        <div class="product-info__color-get" data-color="white"></div>
+                    </a>
+                    <a class="product-info__color-item" href="">
+                        <div class="product-info__color-get" data-color="beige"></div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="product-info__choise">
+                <h3 class="product-info__choise-title">Выберите размер</h3>
+                <div class="product-info__choise-all">
+                    <div class="product-info__choise-size">
+                        <p>
+                            <input type="radio" name="options[size]" value="XS" id="XS" style="display:none;">
+                            <label for="XS">XS <span>мало</span></label>
+                        </p>
+                        <p>
+                            <input type="radio" name="options[size]" value="S" id="S" style="display:none;">
+                            <label for="S">S <span>мало</span></label>
+                        </p>
+                        <p class="choise-subscribe"><a class="popup-modal" href="#sub-modal">M</a><span class="choise-min">подписка</span></p>
+                        <div id="sub-modal" class="product-info__choise-subscribe white-popup-block mfp-hide">
+                            <p><a class="popup-modal-dismiss" href="#"><img src="/img/basket_close.svg" alt=""></a></p>
+                            <h5>Подписаться на размер</h5>
+                            <p>Введите адрес электронной почты, и мы оповестим вас, когда <span>размер M</span> появится в наличии</p>
+                            <form>
+                                <input type="email" placeholder="Укажите ваш email" required="">
+                                <input type="submit" value="Подписаться">
+                                <p>Нажимая кнопку Зарегистрироваться, я даю согласие на обработку и передачу моих персональных данных</p>
+                            </form>
+                        </div>
+                        <p>
+                            <input type="radio" name="options[size]" value="L" id="L" style="display:none;">
+                            <label for="L">L <span>много</span></label>
+                        </p>
+                    </div>
+                    <div class="product-info__choise-table">
+                        <a class="popup-modal" href="#size-modal">Таблица размеров</a>
+                        <div id="size-modal" class="product-info__choise-form white-popup-block mfp-hide">
+                            <p><a class="popup-modal-dismiss" href="#"><img src="/img/basket_close.svg" alt=""></a></p>
+                            <h5>Как выбрать одежду своего размера?</h5>
+                            <p>При измерении обхвата груди лента должна плотно прилегать к телу, спереди проходить по наиболее выступающим точкам, сбоку через подмышечные впадины, сзади обхватывая лопатки.</p>
+                            <p> Обхват талии измеряется строго горизонтально по самой узкой части тела, проходя через самую выступающую точку живота. При измерении обхвата бедер лента должна находиться горизонтально, проходя посредине бедра и сзади по наиболее выступающим точкам ягодиц.</p>
+                            <table>
+                                <tr><th>стандарт</th><th>Обхват груди</th><th>Обхват бедер</th><th>Обхват талии</th><th>Россия</th></tr>
+                                <tr><td>XXS</td><td>до 87</td><td>до 56</td><td>до 87</td><td>38</td></tr>
+                                <tr><td>XS</td><td>до 88-90</td><td>до 60</td><td>до 90</td><td>40</td></tr>
+                                <tr><td>S</td><td>до 93-95</td><td>до 64</td><td>до 93</td><td>42</td></tr>
+                                <tr><td>M</td><td>до 98</td><td>до 68</td><td>до 97</td><td>44-46</td></tr>
+                                <tr><td>L</td><td>до 102</td><td>до 72-73</td><td>до 102</td><td>48</td></tr>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info__basket">
+                <a href="#basket-modal" class="product-info__basket-button popup-modal header__link header__link-basket">Добавить в корзину</a>
+                <div class="product__size-choise">Выберите размер</div>
+                <button class="product-info__basket-like"></button>
+                <div id="basket-modal" class="white-popup-block mfp-hide">
+                    <div class="basket"> 
+                        <div class="basket__all">
+                            <a class="popup-modal-dismiss basket__cross" href="#"><img src="/img/basket_close.svg" alt="close"></a>
+                            <div class="basket__info--mobile">
+                                <h3 class="basket__title">Корзина</h3>
+                                <div class="basket__quantity basket__quantity--mobile">3 изделия</div>
+                            </div>
+                                <div class="basket__info">
+                                    <div class="basket__card">
+                                        <div class="basket__img"><img src="/img/basket_1.png" alt="basket_1"></div>
+    
+                                            <div class="basket__content">
+                                                <div class="basket__content-top">
+                                                    <h5 class="basket__content-name"><a href="">вязанный Свитер свободного кроя с воротником</a></h5>
+                                                    <p class="basket__content-art">арт. 121nab</p>
+                                                </div>
+                                                <div class="basket__content-bottom">
+                                                    <p class="basket__content-sale">Цена <span>6500 р.</span></p>
+                                                    <p class="basket__content-size">Размер <span>XS</span></p>
+                                                    <p class="basket__content-color">Цвет <span>Электрик</span></p>
+                                                    <div class="basket__content-num">Количество <button class="minus"><img src="/img/minus_icon.svg" alt="minus_icon"></button><span>1</span><button class="plus"><img src="/img/plus_icon.svg" alt="minus_icon"></button></div>
+                    
+                                                </div>
+                                            </div>
+                                            <div class="basket__add">
+                                                <div class="basket__sale">
+                                                    <p class="basket__price">6500 р.</p>
+                                                </div>
+                                                <button class="basket__delete">удалить</button>
+                                            </div>
+    
+                                    </div>
+                
+                                    <div class="basket__card">
+                                        <div class="basket__img"><img src="/img/basket_2.png" alt="basket_2"></div>
+                                        <div class="basket__content">
+                                            <div class="basket__content-top">
+                                                <h5 class="basket__content-name"><a href="">Платье "Париж" мини, зелёное</a></h5>
+                                                <p class="basket__content-art">арт. 132nab</p>
+                                            </div>
+                                            <div class="basket__content-bottom">
+                                                <p class="basket__content-sale">Цена <span>6500 р.</span><span class="basket__content-sale--old">9000 р.</span></p>
+                                                <p class="basket__content-size">Размер <span>XS</span></p>
+                                                <p class="basket__content-color">Цвет <span>Зелёный</span></p>
+                                                <div class="basket__content-num">Количество <button class="minus"><img src="/img/minus_icon.svg" alt="minus_icon"></button><span>1</span><button class="plus"><img src="/img/plus_icon.svg" alt="minus_icon"></button></div>
+                
+                                            </div>
+                                        </div>
+                                        <div class="basket__add">
+                                            <div class="basket__sale">
+                                                <p class="basket__price">6500 р.</p>
+                                                <p class="basket__price basket__price--old">9000 р.</p>
+                                            </div>
+                                            <button class="basket__delete">удалить</button>
+                                        </div>
+                                    </div>
+                                    <div class="basket__card">
+                                        <div class="basket__img"><img src="/img/basket_2.png" alt="basket_2"></div>
+                                        <div class="basket__content">
+                                            <div class="basket__content-top">
+                                                <h5 class="basket__content-name"><a href="">Платье "Париж" мини, зелёное</a></h5>
+                                                <p class="basket__content-art">арт. 132nab</p>
+                                            </div>
+                                            <div class="basket__content-bottom">
+                                                <p class="basket__content-sale">Цена <span>6500 р.</span><span class="basket__content-sale--old">9000 р.</span></p>
+                                                <p class="basket__content-size">Размер <span>XS</span></p>
+                                                <p class="basket__content-color">Цвет <span>Зелёный</span></p>
+                                                <div class="basket__content-num">Количество <button class="minus"><img src="/img/minus_icon.svg" alt="minus_icon"></button><span>1</span><button class="plus"><img src="/img/plus_icon.svg" alt="minus_icon"></button></div>
+                
+                                            </div>
+                                        </div>
+                                        <div class="basket__add">
+                                            <div class="basket__sale">
+                                                <p class="basket__price">6500 р.</p>
+                                                <p class="basket__price basket__price--old">9000 р.</p>
+                                            </div>
+                                            <button class="basket__delete">удалить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket__result">
+                                    <div class="basket__quantity">3 изделия</div>
+                                    <div class="basket__cost">
+                                        <p class="basket__total">Стоимость <span>15 500 p.</span></p>
+                                        <p class="basket__discount">Ваша скидка <span>-2500 p.</span></p>
+                                        <p class="basket__sum">Стоимость <span>13 000 p.</span></p>
+                                    </div>
+                                </div>
+    
+                                <div class="basket__group">
+                                    <a href="" class="basket__arrange">Оформить заказ</a>
+                                    <a href="" class="basket__go">Продолжить покупки</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="product-info__description">
+                <p>Нежный и тёплый.</p>
+                <p>Идеальный кардиган нашего вязального производства цвета электрик.</p>
+            </div>
+
+            <div class="product-info__accordeon">
+                <div class="accordion accordion-menu accordion-menu-catalog">
+                      <div class="accordion-item accordion-item--menu accordion-item--menu-product">
+                        <button id="accordion-button-1" class="accordion-filter" aria-expanded="false"><span class="accordion-title">Наличие в магазинах </span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content accordion-content-city">
+                            <div class="accordeon-location">
+
+                                <h3 class="accordeon-location__city">Москва</h3>
+                                <p class="accordeon-location__address">Котельническая набережная 31</p>
+                                <p class="accordeon-location__time">Режим работы: с 11:00 до 21:00, без выходных.</p>
+                                <table class="accordeon-location__size">
+                                    <tr><th>XXS</th><th>XS</th><th>S</th><th>M</th><th>L</th></tr>
+                                    <tr><td>+</td><td>-</td><td>-</td><td>+</td><td>+</td></tr>
+                                </table>
+                                <p class="accordeon-location__phone"><a href="">8 800 500 48 84</a></p>
+
+                            </div>
+                            <div class="accordeon-location">
+
+                                <p class="accordeon-location__address"><span class="address-discount">Дисконт</span>: ул. Бауманская 9</p>
+                                <p class="accordeon-location__time">Режим работы: с 11:00 до 21:00, без выходных.</p>
+                                <table class="accordeon-location__size">
+                                    <tr><th>XXS</th><th>XS</th><th>S</th><th>M</th><th>L</th></tr>
+                                    <tr><td>+</td><td>-</td><td>-</td><td>+</td><td>+</td></tr>
+                                </table>
+                                <p class="accordeon-location__phone"><a href="">8 800 500 48 84</a></p>
+                                
+                            </div>
+                            <div class="accordeon-location">
+
+                                <h3 class="accordeon-location__city">Санкт-Петербург</h3>
+                                <p class="accordeon-location__address">Малодетскосельский проспект 31. </p>
+                                <p class="accordeon-location__time">Режим работы: с 11:00 до 21:00, без выходных.</p>
+                                <table class="accordeon-location__size">
+                                    <tr><th>XXS</th><th>XS</th><th>S</th><th>M</th><th>L</th></tr>
+                                    <tr><td>+</td><td>-</td><td>-</td><td>+</td><td>+</td></tr>
+                                </table>
+                                <p class="accordeon-location__phone"><a href="">8 800 500 48 84</a></p>
+                                
+                            </div>
+                            <div class="accordeon-location">
+
+                                <h3 class="accordeon-location__city">Краснодар</h3>
+                                <p class="accordeon-location__address">ул. Красная 17. </p>
+                                <p class="accordeon-location__time">Режим работы: с 11:00 до 21:00, без выходных.</p>
+                                <table class="accordeon-location__size">
+                                    <tr><th>XXS</th><th>XS</th><th>S</th><th>M</th><th>L</th></tr>
+                                    <tr><td>+</td><td>-</td><td>-</td><td>+</td><td>+</td></tr>
+                                </table>
+                                <p class="accordeon-location__phone"><a href="">8 800 500 48 84</a></p>
+                                
+                            </div>
+                        </div>
+                      </div>
+                    <div class="accordion-item accordion-item--menu">
+                      <button id="accordion-button-2" class="accordion-filter" aria-expanded="false"><span class="accordion-title">Состав</span><span class="icon" aria-hidden="true"></span></button>
+                      <div class="accordion-content accordion-content--product">
+                        <p>Хлопок — 50 %; акрил — 50 %.</p>
+                      </div>
+                    </div>
+                    <div class="accordion-item accordion-item--menu">
+                      <button id="accordion-button-3" class="accordion-filter" aria-expanded="false"><span class="accordion-title">На  модели</span><span class="icon" aria-hidden="true"></span></button>
+                      <div class="accordion-content accordion-content--product">
+                        <p><span>Параметры изделия: </span>Длина — 60 см, рукав — 50 см (спущенные плечи).</p>
+                        <p><span>Параметры модели:</span> Рост — 171 см, грудь — 88 см, талия — 58 см, бедра — 88 см.</p>
+                        <p>На модели размер XS.</p>
+                      </div>
+                    </div>
+                    <div class="accordion-item accordion-item--menu">
+                        <button id="accordion-button-4" class="accordion-filter" aria-expanded="false"><span class="accordion-title">Уход</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content ">
+                            <p>Деликатная стирка при температуре до 30 °, глажка при температуре не выше 150 °.</p>
+                        </div>
+                      </div>
+                      <div class="accordion-item accordion-item--menu">
+                        <button id="accordion-button-5" class="accordion-filter" aria-expanded="false"><span class="accordion-title">Доставка и оплата</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content accordion-content--product">
+                          <div class="accordeon-order">
+                              <p class="accordeon-order__descripton">При покупке трёх и более изделий скидка на доставку 500 р.*</p>
+                              <p class="accordeon-order__disclamer">*не действует при доставке по Москве, Санкт-Петербургу и Краснодару.</p>
+                              <div class="accordeon-order__choise">
+                                  <p class="accordeon-order__card">Оплата банковской картой онлайн:</p>
+                                  <div class="accordeon-order__bank">
+                                      <img src="/img/visa.svg" alt="Visa">
+                                      <img src="/img/master.svg" alt="Master">
+                                      <img src="/img/mir.svg" alt="Mir">
+                                  </div>
+                              </div>
+                          </div>
+          
+                        </div>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="product__social-mobile">
+                    <h3 class="product__social-mobile__title">Возникли вопросы?</h3>
+                    <div class="product__social-mobile__group">
+                        <p class="product__social-mobile__item product__social-mobile__item--whatsapp"><a href="">Написать в WhatsApp</a></p>
+                        <p class="product__social-mobile__item product__social-mobile__item--insta"><a href="">Мы в Instagram</a></p>
+                        <p class="product__social-mobile__item product__social-mobile__item--mail"><a href="">Эл. почта</a></p>
+                        <p class="product__social-mobile__item product__social-mobile__item--phone"><a href="">Позвонить</a></p>
+                    </div>
+                </div>
+
+        </div>
+
+        </section>
+
+        <section class="product-gallery">
+
+            <div class="bestsellers__top">
+
+                <h3 class="bestsellers__title bestsellers__title--catalog-look">Полный образ</h3>
+
+            </div>
+
+            <div class="bestsellers__slider">
+
+                <div class="swiper-container">
+
+                    <div class="product-gallery-wrapper">
+
+                      <div class="card__slide">
+                        <div class="card__img card__img-product">
+                            <img src="/img/best_1.png" alt="">
+                            <span class="card__img--like"></span>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__content">
+                                <h6 class="card__name">Платье футляр горошек, красное</h6>
+                                <div class="card__colors">
+                                    <span class="red"></span>
+                                </div>
+                            </div>
+                            <div class="card__price">7400 р.</div>
+                        </div>
+                      </div>
+
+                      <div class="card__slide">
+                        <div class="card__img card__img-product">
+                            <img src="/img/best_2.png" alt="">
+                            <span class="card__img--like"></span>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__content">
+                                <h6 class="card__name">Платье "Париж" миди, бирюзовый</h6>
+                                <div class="card__colors">
+                                    <span class="white"></span>
+                                    <span class="black"></span>
+                                    <span class="aqua"></span>
+                                    <span class="yellow"></span>
+                                </div>
+                            </div>
+                            <div class="card__price">6900 р.</div>
+                        </div>
+                      </div>
+
+                      <div class="card__slide">
+                        <div class="card__img card__img-product">
+                            <img src="/img/best_3.png" alt="">
+                        </div>
+                        <div class="card__info">
+                            <div class="card__content">
+                                <h6 class="card__name">Платье "Париж" миди, бирюзовый</h6>
+                                <div class="card__colors">
+                                    <span class="aqua"></span>
+                                    <span class="white"></span>
+                                    <span class="black"></span>
+                                    <span class="yellow"></span>
+                                </div>
+                            </div>
+                            <div class="card__price">8900 р.</div>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="product-slider">
+
+            <div class="bestsellers__top">
+
+                <h3 class="bestsellers__title">Вам может понравиться</h3>
+                <div class="bestsellers__arrows">
+                    <div class="bestsellers__arr swiper-button-next"></div>
+                    <div class="bestsellers__arr swiper-button-prev"></div>
+                </div>
+
+            </div>
+
+            <div class="bestsellers__slider">
+
+                <div id="swiper_best" class="swiper-container">
+
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide card__slide">
+                        <div class="card__img">
+                            <img src="/img/best_1.png" alt="">
+                            <span class="card__img--new">New</span>
+                            <span class="card__img--like"></span>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__content">
+                                <h6 class="card__name">Платье футляр горошек, красное</h6>
+                                <div class="card__colors">
+                                    <span class="red"></span>
+                                </div>
+                            </div>
+                            <div class="card__price">7400 р.</div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide card__slide">
+                        <div class="card__img">
+                            <img src="/img/best_2.png" alt="">
+                            <span class="card__img--like"></span>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__content">
+                                <h6 class="card__name">Платье "Париж" миди, бирюзовый</h6>
+                                <div class="card__colors">
+                                    <span class="white"></span>
+                                    <span class="black"></span>
+                                    <span class="aqua"></span>
+                                    <span class="yellow"></span>
+                                </div>
+                            </div>
+                            <div class="card__price">6900 р.</div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide card__slide">
+                        <div class="card__img">
+                            <img src="/img/best_3.png" alt="">
+                            <span class="card__img--best">Best</span>
+                            <span class="card__img--like"></span>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__content">
+                                <h6 class="card__name">Платье "Париж" миди, бирюзовый</h6>
+                                <div class="card__colors">
+                                    <span class="aqua"></span>
+                                    <span class="white"></span>
+                                    <span class="black"></span>
+                                    <span class="yellow"></span>
+                                </div>
+                            </div>
+                            <div class="card__price">8900 р.</div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide card__slide">
+                        <div class="card__img">
+                            <img src="/img/best_4.png" alt="">
+                            <span class="card__img--like"></span>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__content">
+                                <h6 class="card__name">Силуэтное платье-бюстье, чёрное</h6>
+                                <div class="card__colors">
+                                    <span class="white"></span>
+                                    <span class="black"></span>
+                                </div>
+                            </div>
+                            <div class="card__price">8500 р.</div>
+                        </div>
+                      </div>
+
+                     <div class="swiper-slide card__slide">
+                        <div class="card__img">
+                            <img src="/img/best_1.png" alt="">
+                            <span class="card__img--like"></span>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__content">
+                                <h6 class="card__name">Платье футляр горошек, красное</h6>
+                                <div class="card__colors">
+                                    <span class="red"></span>
+                                </div>
+                            </div>
+                            <div class="card__price">7400 р.</div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide card__slide">
+                        <div class="card__img">
+                            <img src="/img/best_2.png" alt="">
+                            <span class="card__img--like"></span>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__content">
+                                <h6 class="card__name">Платье "Париж" миди, бирюзовый</h6>
+                                <div class="card__colors">
+                                    <span class="white"></span>
+                                    <span class="black"></span>
+                                    <span class="aqua"></span>
+                                    <span class="yellow"></span>
+                                </div>
+                            </div>
+                            <div class="card__price">6900 р.</div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide card__slide">
+                        <div class="card__img">
+                            <img src="/img/best_3.png" alt="">
+                            <span class="card__img--like"></span>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__content">
+                                <h6 class="card__name">Платье "Париж" миди, бирюзовый</h6>
+                                <div class="card__colors">
+                                    <span class="aqua"></span>
+                                    <span class="white"></span>
+                                    <span class="black"></span>
+                                    <span class="yellow"></span>
+                                </div>
+                            </div>
+                            <div class="card__price">8900 р.</div>
+                        </div>
+                      </div>
+                      
+                      <div class="swiper-slide card__slide">
+                        <div class="card__img">
+                            <img src="/img/best_4.png" alt="">
+                            <span class="card__img--like"></span>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__content">
+                                <h6 class="card__name">Силуэтное платье-бюстье, чёрное</h6>
+                                <div class="card__colors">
+                                    <span class="white"></span>
+                                    <span class="black"></span>
+                                </div>
+                            </div>
+                            <div class="card__price">8500 р.</div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+       
+    </main>
+
+   @@include('./templates/footer.html')
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/magnific.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/sticky.js"></script>
+    <script src="js/accordeon.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>

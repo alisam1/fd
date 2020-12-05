@@ -1,0 +1,163 @@
+@import "variables.scss";
+@import "blocks/base.scss";
+@import "blocks/normalize.scss";
+@import "blocks/magnific.scss";
+@import "blocks/greeting.scss";
+@import "blocks/accordeon.scss";
+@import "blocks/slick.scss";
+@import "blocks/slick-theme.scss";
+@import "blocks/container.scss";
+@import "blocks/swiper.scss";
+@import "blocks/header.scss";
+@import "blocks/footer.scss";
+@import "blocks/top.scss";
+@import "blocks/nav_bottom.scss";
+@import "blocks/collection.scss";
+@import "blocks/bestsellers.scss";
+@import "blocks/discount.scss";
+@import "blocks/sidebar.scss";
+@import "blocks/card.scss";
+@import "blocks/catalog.scss";
+@import "blocks/basket.scss";
+@import "blocks/product.scss";
+@import "blocks/steps.scss";
+@import "blocks/order.scss";
+@import "blocks/question.scss";
+@import "blocks/collections.scss";
+@import "blocks/collection_page.scss";
+@import "blocks/personal.scss";
+@import "blocks/personal_order.scss";
+@import "blocks/shops.scss";
+@import "blocks/contacts.scss";
+@import "blocks/about.scss";
+@import "blocks/payment.scss";
+@import "blocks/error.scss";
+@import "blocks/reviews.scss";
+@import "blocks/form.scss";
+@import "blocks/basket_empty.scss";
+@import "blocks/vertical.scss";
+
+*{
+  outline: none;
+}
+
+body{
+    font-family: "Century Gothic";
+    margin: 0;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+     overflow: auto;
+    }
+}
+
+input {outline:none;}
+
+a { 
+  outline: none !important;
+  text-decoration: none;
+}
+
+.form-error{ 
+    input{
+        border-bottom: 1px solid #B26767 !important;;
+    }
+}
+  
+  .error-message{
+    font-family: "Century Gothic";
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #B26767 !important;
+    text-transform: lowercase;
+    display: flex;
+    position: relative;
+    bottom: 30px;
+  }
+
+
+textarea {outline:none;}
+
+.black-button{
+    font-family: "Century Gothic";
+    padding-left: 60px;
+    padding-right: 50px;
+    height: 50px;
+    background-color: #000;
+    border: 1px solid transparent;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    cursor: pointer;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    text-decoration: none;
+      a{
+      font-family: "Century Gothic";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 21px;
+      color: #FFFFFF;
+      text-align: center;
+      text-decoration: none;
+      text-align: center;
+      width: 100%;
+      display: block;
+      padding-top: 0px;
+    }
+}
+
+.grey-button{
+    font-family: "Century Gothic";
+    padding-left: 60px;
+    padding-right: 50px;
+    height: 50px;
+    background-color: #949494;
+    border: 1px solid transparent;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    cursor: pointer;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.white-button{
+    font-family: "Century Gothic";
+    padding-left: 60px;
+    padding-right: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #1B1B1B;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1B1B1B;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    cursor: pointer;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">   
+    <title>FreshDress</title>
+</head>
+<body>
+
+    @@include('./templates/header.html')
+
+    <main>
+
+        <div class="personal-order container">
+            <div class="personal-order__top">
+                <a href="" class="personal-order__link">Назад</a>
+                <h1 class="personal-order__title">Заказ №4562</h1>
+            </div>
+            <div class="personal-order__block">
+                <div class="personal-order__info">
+                    <p class="personal-order__status"><span>Статус</span><span class="personal-order__content">Ожидает оплаты</span></p>
+                    <p class="personal-order__payment"><span>Оплата</span><span class="personal-order__content"><a href="">Оплатить</a></span></p>
+                    <p class="personal-order__order"><span>Доставка</span><span class="personal-order__content">СДЭК 320 р., 4-6 дней</span></p>
+                    <p class="personal-order__address"><span>Адрес доставки</span><span class="personal-order__content">Колокольная ул. 2, Санкт-Петербург 191025, Россия</span></p>
+                </div>
+
+                <div class="personal-order__basket">
+                    <div class="basket__all basket__all--order"> 
+                        <div class="basket__quantity basket__quantity--personal">3 изделия</div>
+                        <div class="basket__info">
+                            <div class="basket__card">
+                                <div class="basket__img"><img src="/img/basket_1.png" alt="basket_1"></div>
+
+                                    <div class="basket__content">
+                                        <div class="basket__content-top">
+                                            <h5 class="basket__content-name"><a href="">вязанный Свитер свободного кроя с воротником</a></h5>
+                                            <p class="basket__content-art">арт. 121nab</p>
+                                        </div>
+                                        <div class="basket__content-bottom">
+                                            <p class="basket__content-sale">Цена <span>6500 р.</span></p>
+                                            <p class="basket__content-size">Размер <span>XS</span></p>
+                                            <p class="basket__content-color">Цвет <span>Электрик</span></p>
+                                            <div class="basket__content-num">Количество <span>1</span></div>
+            
+                                        </div>
+                                    </div>
+                                    <div class="basket__add">
+                                        <div class="basket__sale">
+                                            <p class="basket__price">6500 р.</p>
+                                        </div>
+                                    </div>
+
+                            </div>
+        
+                            <div class="basket__card">
+                                <div class="basket__img"><img src="/img/basket_2.png" alt="basket_2"></div>
+                                <div class="basket__content">
+                                    <div class="basket__content-top">
+                                        <h5 class="basket__content-name"><a href="">Платье "Париж" мини, зелёное</a></h5>
+                                        <p class="basket__content-art">арт. 132nab</p>
+                                    </div>
+                                    <div class="basket__content-bottom">
+                                        <p class="basket__content-sale">Цена <span>6500 р.</span><span class="basket__content-sale--old">9000 р.</span></p>
+                                        <p class="basket__content-size">Размер <span>XS</span></p>
+                                        <p class="basket__content-color">Цвет <span>Зелёный</span></p>
+                                        <div class="basket__content-num">Количество <span>1</span></div>
+        
+                                    </div>
+                                </div>
+                                <div class="basket__add">
+                                    <div class="basket__sale">
+                                        <p class="basket__price">6500 р.</p>
+                                        <p class="basket__price basket__price--old">9000 р.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__card">
+                                <div class="basket__img"><img src="/img/basket_2.png" alt="basket_2"></div>
+                                <div class="basket__content">
+                                    <div class="basket__content-top">
+                                        <h5 class="basket__content-name"><a href="">Платье "Париж" мини, зелёное</a></h5>
+                                        <p class="basket__content-art">арт. 132nab</p>
+                                    </div>
+                                    <div class="basket__content-bottom">
+                                        <p class="basket__content-sale">Цена <span>6500 р.</span><span class="basket__content-sale--old">9000 р.</span></p>
+                                        <p class="basket__content-size">Размер <span>XS</span></p>
+                                        <p class="basket__content-color">Цвет <span>Зелёный</span></p>
+                                        <div class="basket__content-num">Количество <span>1</span></div>
+        
+                                    </div>
+                                </div>
+                                <div class="basket__add">
+                                    <div class="basket__sale">
+                                        <p class="basket__price">6500 р.</p>
+                                        <p class="basket__price basket__price--old">9000 р.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket__result basket__result--personal">
+                            <div class="basket__cost">
+                                <p class="basket__total">Стоимость <span>15 500 p.</span></p>
+                                <p class="basket__discount">Ваша скидка <span>-2500 p.</span></p>
+                                <p class="basket__sum">Стоимость <span>13 000 p.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+       
+    </main>
+
+    @@include('./templates/footer.html')
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/magnific.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/sticky.js"></script>
+    <script src="js/accordeon.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+.bestsellers{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 0;
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    &__top{
+        position: relative;
+    }
+    &__title{
+        font-family: 'Century Gothic';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #313131;
+        margin: 0;
+        margin-bottom: 30px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 82%;
+            height: 1px;
+            color: #fff;
+            background-color: #3D3D3D;
+            top: 50%;
+            left: 130px;
+            @media screen and (min-width: 768px) and (max-width: 1279px) {
+                width: 75%;
+            }
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                width: 130px;
+                top: 50%;
+                left: 115px;
+            }
+        }
+        &-collection{
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                font-size: 14px;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 75%;
+                height: 1px;
+                color: #fff;
+                background-color: #3D3D3D;
+                top: 50%;
+                left: 18.5%;
+                @media screen and (min-width: 768px) and (max-width: 1279px) {
+                    width: 53%;
+                    left: 40%;
+                }
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    display: none;
+                }
+            }
+            &-brand{
+                &::after {
+                    width: 90%;
+                    left: 10%;
+                    @media screen and (min-width: 768px) and (max-width: 1279px) {
+                        width: 79%;
+                        left: 20%;
+                    }
+                }
+            }
+        }
+    }
+}

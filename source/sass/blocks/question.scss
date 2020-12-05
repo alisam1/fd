@@ -1,0 +1,123 @@
+.question{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__decription{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #1B1B1B;
+        width: 20%;
+        margin-bottom: 25px;
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+           width: auto;
+         }
+         @media screen and (min-width: 320px) and (max-width: 767px) {
+            width: auto;
+         }
+    }
+    &__group{
+        display: flex;
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            white-space: nowrap;
+            overflow-x: auto;
+            padding-bottom: 20px;
+            margin-bottom: -20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+          }
+          @media screen and (min-width: 320px) and (max-width: 767px) {
+            white-space: nowrap;
+            overflow-x: auto;
+            padding-bottom: 20px;
+            margin-bottom: -20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+          }
+    }
+    &__button{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        color: #3D3D3D;
+        background: #AFD83B;
+        text-align: center;
+        margin-right: 13px;
+        border: none;
+        display: flex;
+        align-items: center;
+        padding-top: 12.5px;
+        padding-bottom: 12.5px;
+        &--whatsapp{
+            background-image: url("../img/mobile_whatsapp.svg");
+            background-repeat: no-repeat;
+            background-position: center left 10px;
+            position: relative;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            text-decoration: none;
+            box-sizing: border-box;
+            padding-left: 30px;
+            padding-right: 10px;
+            @media screen and (min-width: 768px) and (max-width: 1279px) {
+                 width: 70%;
+                 background-position: center left 60px;
+              }
+        }
+        &--insta{
+            background-image: url("../img/mobile_insta.svg");
+            background-repeat: no-repeat;
+            position: relative;
+            padding-left: 0;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            text-decoration: none;
+            color: #3D3D3D;
+            box-sizing: border-box;
+            background-position: top 15px left 25px;
+            padding-left: 45px;
+            padding-right: 30px;
+            @media screen and (min-width: 768px) and (max-width: 1279px) {
+                width: 70%;
+                background-position: top 15px left 80px;
+            }
+        }
+        &--mail{
+           background-image: url("../img/mobile_mail.svg");
+            background-repeat: no-repeat;
+            position: relative;
+            padding-left: 0;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            text-decoration: none;
+            color: #3D3D3D;
+            box-sizing: border-box;
+            background-position: top 13px left 25px;
+            padding-left: 45px;
+            padding-right: 30px;
+            @media screen and (min-width: 768px) and (max-width: 1279px) {
+                width: 70%;
+                background-position: top 13px left 80px;
+            }
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        display: block;
+        overflow: hidden;
+       }
+       @media screen and (min-width: 320px) and (max-width: 767px) {
+        display: block;
+        overflow: hidden;
+       }
+}

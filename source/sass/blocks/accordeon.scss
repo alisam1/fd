@@ -1,0 +1,296 @@
+$bg: #fff;
+$text: #7288a2;
+$gray: #4d5974;
+$lightgray: #e5e5e5;
+$blue: #03b5d2;
+
+.accordion {
+  .accordion-item {
+    border-bottom: 1px solid #E3E3E3;
+    &--menu{
+        border-bottom: none;
+        &-product{
+          border-top: 1px solid #E3E3E3;
+        }
+    }
+    button[aria-expanded='true'] {
+      border-bottom: none;
+    }
+    &:nth-child(1){
+      border-top: 1px solid #E3E3E3;
+    }
+  }
+  button {
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    //padding: 1em 0;
+    color: $text;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+    &:hover, &:focus {
+      cursor: pointer;
+      color: #313131;
+      &::after {
+        cursor: pointer;
+        color: $blue;
+        border: 1px solid #313131;
+      }
+    }
+    .accordion-title {
+       font-family: "Century Gothic";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        color: #1B1B1B;
+        &--footer{
+          text-transform: uppercase;
+          font-size: 14px;
+        }
+    }
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 15px;
+      right: 0;
+      width: 22px;
+      height: 22px;
+      &::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 10px;
+        left: 4px;
+        width: 11px;
+        height: 1px;
+        background: currentColor;
+        color: #313131;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 9px;
+        width: 1px;
+        height: 11px;
+        background: currentColor;
+        color: #313131;
+      }
+    }
+    &.accordion-filter{
+      border-bottom: 1px solid #E3E3E3;
+      .accordion-title{
+        font-family: "Century Gothic";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #1B1B1B;
+        text-transform: initial;
+      }
+    }
+  }
+  &-link{
+    a{
+      font-family: "Century Gothic";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+      color: #1B1B1B;
+      text-decoration: none;
+      text-decoration: none;
+    }
+  }
+  &__list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-right: 200px;
+    padding-top: 20px;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        padding-right: 0;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+     &--social{
+       @media screen and (min-width: 320px) and (max-width: 767px) {
+        padding-right: 0;
+        padding-top: 15px;
+    }
+  }
+}
+  &__item{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1B1B1B;
+    padding-bottom: 10px;
+    &--title{
+        padding-bottom: 16px;
+    }
+    &--what{
+        position: relative;
+        left: 25px;
+        &::before{
+            content: "";
+            position: absolute;
+            background-image: url("../img/footer_whatsapp.svg");
+            width: 16px;
+            height: 16px;
+            left: -26px;
+            top: 2px;
+        }
+    }
+    &--insta{
+        position: relative;
+        left: 25px;
+        &::before{
+            content: "";
+            position: absolute;
+            background-image: url("../img/footer_insta.svg");
+            width: 16px;
+            height: 16px;
+            left: -26px;
+            top: 2px;
+        }
+    }
+    &--tiktok{
+        position: relative;
+        left: 25px;
+        &::before{
+            content: "";
+            position: absolute;
+            background-image: url("../img/footer_tiktok.svg");
+            width: 16px;
+            height: 16px;
+            left: -26px;
+            top: 2px;
+        }
+    }
+    a{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #1B1B1B;
+        text-decoration: none;
+        text-transform: initial;
+        padding-bottom: 10px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 280px;
+    }
+}
+  button[aria-expanded='true'] {
+    color: $blue;
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    + .accordion-content {
+      opacity: 1;
+      height: 100%;
+      max-height: 100%;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+    }
+  }
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    border-bottom: 1px solid #E3E3E3;
+    &-color{
+      column-count: 2;
+      //margin-bottom: 20px;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-top: 0px;
+        padding-bottom: 4px;
+    }
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: #1B1B1B;
+      margin: 0;
+      margin-top: 13px;
+      margin-bottom: 13px;
+      span{
+        display: block;
+        font-weight: 600;
+        margin-bottom: 5px;
+        &.address-discount{
+          font-weight: 400;
+          display: inline;
+
+        }
+      }
+    }
+    .footer__item{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #1B1B1B;
+    }
+    &-city{
+      border-bottom: 1px solid #E3E3E3;
+    }
+    &__header-mobile{
+      border-bottom: none;
+    }
+    &--product{
+      margin-top: -13px;
+      padding-bottom: 13px;
+    }
+  }
+  &-menu{
+      padding-bottom: 200px !important;
+      margin-top: 50px !important;
+      &-catalog{
+        margin-top: 25px !important;
+        padding-bottom: 50px !important;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        margin-top: 35px !important;
+    }
+    &--header{
+       @media screen and (min-width: 320px) and (max-width: 767px) {
+        margin-top: 15px !important;
+    }
+    }
+  }
+}

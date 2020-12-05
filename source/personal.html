@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">   
+    <title>FreshDress</title>
+</head>
+<body>
+
+    @@include('./templates/header.html')
+
+    <main>
+
+        <div class="personal">
+            <div class="personal__top">
+                <p class="personal__top-out"><a href="">выйти</a></p>
+            </div>
+            <div class="personal__tabs">
+                <input type="radio" name="tab-btn" id="personal__tab-one" value="" checked>
+                <label id="personal-one" for="personal__tab-one">Личные данные</label>
+                <input type="radio" name="tab-btn" id="personal__tab-second" value="">
+                <label id="personal-second"  for="personal__tab-second">Мои заказы</label>
+            
+                <div id="personal__content-one">
+                  <div class="personal__data">
+                      <h3 class="personal__data-title">Контактная информация</h3>
+                      <form class="personal__data-form"> 
+                          <div class="personal__data-form__name">
+                            <div class="custom-form-group">
+                              <input type="text" name="name" class="custom-form-control error" data-val="">
+                              <span class="custom-input-placeholder">Имя</span>
+                              <span class="error_name error">Не указано Имя</span>
+                          </div>
+                          <div class="custom-form-group">
+                              <input type="text" name="name" class="custom-form-control error" data-val="">
+                              <span class="custom-input-placeholder">Фамилия</span>
+                              <span class="error_name error">Не указана Фамилия</span>
+                          </div>
+                          </div>
+                          <div class="personal__data-form__contacts">
+                            <div class="custom-form-group">
+                              <input type="email" name="email" class="custom-form-control error" data-val="">
+                              <span class="custom-input-placeholder">Email</span>
+                              <span class="error_name error">Не указан Email</span>
+                          </div>
+                          <div class="custom-form-group">
+                            <input type="text" name="phone" class="custom-form-control error" data-val="">
+                            <span class="custom-input-placeholder">Телефон</span>
+                            <span class="error_name error">Не указан Телефон</span>
+                        </div>
+                        </div>
+                        <div class="personal__data-form__birthday">
+                          <div class="custom-form-group">
+                              <input type="text" name="birthday" class="custom-form-control error" id="personal-birthday" data-val="">
+                              <span class="custom-input-placeholder">День рождения</span>
+                              <span class="error_name error">Не указан День рождения</span>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="personal__data-form__password">
+                        <a class="personal__data-form__password-link popup-modal" href="#personal-password">Изменить пароль</a>
+                        <div id="personal-password" class="white-popup-block mfp-hide">
+                            <p><a class="personal-close popup-modal-dismiss" href="#"><img src="/img/basket_close.svg" alt=""></a></p>
+                            <h5 class="personal__data-form__password-title">Изменить пароль</h5>
+                            <div class="personal__data-form__password-form"> 
+                                <form class="custom-form custom-form--password-form">
+                                  <div class="custom-form-group">
+                                    <input type="password" name="password" class="custom-form-control error" data-val="">
+                                    <span class="custom-input-placeholder">Старый пароль</span>
+                                    <span class="error_name error">Не указан Старый пароль</span>
+                                  </div>
+                                  <div class="custom-form-group">
+                                    <input type="password" name="password" class="custom-form-control error" data-val="">
+                                    <span class="custom-input-placeholder">Новый пароль</span>
+                                    <span class="error_name error">Не указан Новый пароль</span>
+                                  </div>
+                                  <div class="custom-form-group">
+                                    <input type="password" name="password" class="custom-form-control error" data-val="">
+                                    <span class="custom-input-placeholder">Новый пароль повторно</span>
+                                    <span class="error_name error">Не указан Новый пароль повторно</span>
+                                  </div>
+                                   <a class="grey-button popup-modal" href="#personal-thanks">Сохранить изменения</a>
+                                    <div id="personal-thanks"
+                                      class="white-popup-block mfp-hide personal-thanks">
+                                      <p><a class="personal-close popup-modal-dismiss" href="#"><img src="/img/basket_close.svg" alt=""></a></p>
+                                      <p>Пароль успешно изменен</p>
+                                      <a class="black-button" href="">Вернуться в личный кабинет</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="personal__data">
+                    <h3 class="personal__data-title">Адрес доставки</h3>
+                    <form class="personal__data-form"> 
+                        <div class="personal__data-form__address">
+                          <div class="custom-form-group">
+                            <input type="text" name="text" class="custom-form-control error" data-val="">
+                            <span class="custom-input-placeholder">Страна</span>
+                            <span class="error_name error">Не указана Страна</span>
+                          </div>
+                          <div class="custom-form-group">
+                            <input type="text" name="text" class="custom-form-control error" data-val="">
+                            <span class="custom-input-placeholder">Город</span>
+                            <span class="error_name error">Не указан Город</span>
+                          </div>
+                        </div>
+                        <div class="personal__data-form__address">
+                          <div class="custom-form-group">
+                            <input type="text" name="text" class="custom-form-control error" data-val="">
+                            <span class="custom-input-placeholder">Индекс</span>
+                            <span class="error_name error">Не указан Индекс</span>
+                          </div>
+                          <div class="custom-form-group">
+                            <input type="text" name="text" class="custom-form-control error" data-val="">
+                            <span class="custom-input-placeholder">Улица</span>
+                            <span class="error_name error">Не указана Улица</span>
+                          </div>
+                      </div>
+                      <div class="personal__data-form__address personal__data-form__address--house">
+                        <div class="custom-form-group">
+                          <input type="text" name="text" class="custom-form-control error" data-val="">
+                          <span class="custom-input-placeholder">Дом</span>
+                          <span class="error_name error">Не указан Дом</span>
+                        </div>
+                        <div class="custom-form-group">
+                          <input type="text" name="text" class="custom-form-control error" data-val="">
+                          <span class="custom-input-placeholder">Квартира</span>
+                          <span class="error_name error">Не указана Квартира</span>
+                        </div>
+                        <div class="custom-form-group">
+                          <input type="text" name="text" class="custom-form-control error" data-val="">
+                          <span class="custom-input-placeholder">Корпус</span>
+                          <span class="error_name error">Не указан Корпус</span>
+                        </div>
+                      </div>
+                    </form>
+
+                    <button class="personal__data__button">Сохранить изменения</button>
+                </div>
+                </div>
+                <div id="personal__content-second">
+                  <div class="personal__order">
+                      <div class="personal__card">
+                        <a href="">
+                          <div class="personal__card-order">
+                            <h4 class="personal__card-title">Заказ №1927</h4>
+                            <p class="personal__card-date">от <span>23.12.2020</span></p>
+                          </div>
+                          <p class="personal__card-status"><span>Статус: </span>Ожидает оплаты</p>
+                          <div class="personal__card-order">
+                            <p class="personal__card-payment"><span>Оплата: </span>
+                              <object>
+                                <a href=""> Оплатить</a>
+                              </object>
+                            </p>
+                            <p class="personal__card-total">15 400 p.</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="personal__card">
+                        <a href="">
+                          <div class="personal__card-order">
+                              <h4 class="personal__card-title">Заказ №1913</h4>
+                              <p class="personal__card-date">от <span>01.10.2020</span></p>
+                            </div>
+                            <p class="personal__card-status"><span>Статус: </span>В пути</p>
+                            <div class="personal__card-order">
+                              <p class="personal__card-payment"><span>Оплата: </span> Оплачен</p>
+                              <p class="personal__card-total">20 100 p.</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="personal__card">
+                        <a href="">
+                          <div class="personal__card-order">
+                              <h4 class="personal__card-title">Заказ №1372</h4>
+                              <p class="personal__card-date">от <span>09.09.2020</span></p>
+                            </div>
+                            <p class="personal__card-status"><span>Статус: </span>Доставлен</p>
+                            <div class="personal__card-order">
+                              <p class="personal__card-payment"><span>Оплата: </span> Оплачен</p>
+                              <p class="personal__card-total">6400 p.</p>
+                            </div>
+                        </a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+       
+    </main>
+
+    @@include('./templates/footer.html')
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/magnific.js"></script>
+    <script src="js/maskedinput.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/sticky.js"></script>
+    <script src="js/accordeon.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <title>FreshDress</title>
+</head>
+
+<body>
+
+    @@include('./templates/header.html')
+
+    <main>
+
+        <div class="basket-empty">
+            <h1 class="basket-empty__title">Корзина</h1>
+            <p class="basket-empty__description">В вашей корзине пока пусто</p>
+            <div class="basket-empty__cards collection container">
+            
+                <div class="collection__card">
+                    <a href="">
+                    <div class="collection__photo"><img src="/img/collection_1.png" alt="collection_1"></div>
+                    <h3 class="collections__card-title">Перейти в каталог</h3>
+                    </a>
+                </div>
+            
+                <div class="collection__card">
+                    <a href="">
+                        <div class="collection__photo"><img src="/img/collection_2.png" alt="collection_2"></div>
+                        <h3 class="collections__card-title">смотреть lookbooks</h3>
+                    </a>
+            
+                </div>
+            
+            </div>
+        </div>
+
+    </main>
+
+    @@include('./templates/footer.html')
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/magnific.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/sticky.js"></script>
+    <script src="js/accordeon.js"></script>
+    <script src="js/shops.js"></script>
+</body>
+
+</html>

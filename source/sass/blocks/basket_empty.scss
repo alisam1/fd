@@ -1,0 +1,38 @@
+.basket-empty{
+    &__title{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #1B1B1B;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding-top: 60px;
+        padding-bottom: 16px;
+    }
+    &__description{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        color: #3D3D3D;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    &__cards{
+        .collections__card-title{
+            width: 100%;
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                &::before {
+                    left: -70px;
+            }
+        }
+
+        }
+    }
+}

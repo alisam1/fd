@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">   
+    <title>FreshDress</title>
+</head>
+<body>
+
+    @@include('./templates/header.html')
+
+    <main>
+
+
+    <div class="contacts">
+        <div class="contacts__content">
+            <h3 class="contacts__title">Контакты</h3>
+            <div class="contacts__info">
+                <p class="contacts__phone">Телефон клиентской поддержки: <a href="tel:88005004884"> 8 800 500 48 84,</a> ежедневно с 11:00 до 21:00 по МСК.</p>
+                <p class="contacts__mail">Электронная почта: <a href="mailto:info@freshdress-shop.ru"> info@freshdress-shop.ru</a></p>
+                <p class="contacts__way">Также вы можетет связаться  снами удобным для вас способом:</p>
+                <div class="contacts__group">
+                    <a href="https://wa.me/78005004884" class="question__button question__button--whatsapp" target="_blank">Написать в
+                        WhatsApp</a>
+                    <a href="https://instagram.com/freshdress_shop/" target="_blank" class="question__button question__button--insta">Мы в
+                        Instagram</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="contacts__feedback">
+            <h3 class="contacts__title contacts__title--feedback">Обратная связь</h3>
+            <form action="" id="contact_form" method="post" class="ajax_form">
+                <div class="custom-form-group custom-form-group--contacts">
+                    <input type="text" name="name" class="custom-form-control" data-val="">
+                    <span class="custom-input-placeholder">Имя</span>
+                    <span class="error_name"></span>
+                </div>
+                <div class="custom-form-group custom-form-group--contacts">
+                    <input type="text" name="email" class="custom-form-control" data-val="">
+                    <span class="custom-input-placeholder">Email</span>
+                    <span class="error_email"></span>
+                </div>
+                <textarea name="message" id="textarea" cols="30" rows="2" placeholder="Сообщение"></textarea>
+                <input type="submit" value="Отправить">
+            
+                <input type="hidden" name="af_action" value="bf82d781d226b9d272fcc107978adaf2">
+            </form>
+        </div>
+    </div>
+       
+    </main>
+
+    @@include('./templates/footer.html')
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/magnific.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/sticky.js"></script>
+    <script src="js/accordeon.js"></script>
+    <script src="js/shops.js"></script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">   
+    <title>FreshDress</title>
+</head>
+<body>
+
+    @@include('./templates/header.html')
+
+    <main>
+
+        <section class="reviews">
+
+            <div class="reviews__top">
+                <div class="reviews__lead">
+                    <h1 class="reviews__title">Отзывы</h1>
+                    <p class="reviews__description">Мы благодарны за обратную связь и будем рады получить от вас отзыв о качестве изделий, работе и облуживании в магазинах, службе доставки.</p>
+                    <a class="popup-modal black-button reviews__button" href="#review_modal">Оставить отзыв</a></button>
+                    <div id="review_modal" class="review-modal white-popup-block mfp-hide">
+                        <h3 class="review-modal__title">Опубликовать отзыв</h3>
+                        <p><a class="popup-modal-dismiss" href="#"><img src="img/basket_close.svg" alt=""></a></p>
+                        <div class="review-modal__rating">
+                            <h5 class="review-modal__lead">Ваша оценка</h5>
+                            <div class="review-modal__rating-area">
+                                <input type="radio" id="star-10" name="rating" value="10">
+                                <label for="star-10">10</label>
+                                <input type="radio" id="star-9" name="rating" value="9">
+                                <label for="star-9">9</label>
+                                <input type="radio" id="star-8" name="rating" value="8">
+                                <label for="star-8">8</label>
+                                <input type="radio" id="star-7" name="rating" value="7">
+                                <label for="star-7">7</label>
+                                <input type="radio" id="star-6" name="rating" value="6">
+                                <label for="star-6">6</label>
+                                <input type="radio" id="star-5" name="rating" value="5">
+                                <label for="star-5">5</label>
+                                <input type="radio" id="star-4" name="rating" value="4">
+                                <label for="star-4">4</label>
+                                <input type="radio" id="star-3" name="rating" value="3">
+                                <label for="star-3">3</label>
+                                <input type="radio" id="star-2" name="rating" value="2">
+                                <label for="star-2">2</label>
+                                <input type="radio" id="star-1" name="rating" value="1">
+                                <label for="star-1">1</label>
+                            </div>
+                        </div>
+                        <div class="review-modal__form">
+                            <form action="" id="review_form" method="post" class="ajax_form">
+                                <h5 class="review-modal__lead">Ваш отзыв</h5>
+                                <textarea name="message" id="textarea" cols="30" rows="12" placeholder="Напишите ваше впечатление о качестве изделий, об обслуживании в магазине, с какими трудностями вы столкнулись в процессе заказа. Расскажите ваши предложения и пожелания."></textarea>
+                                <h5 class="review-modal__lead">Контактная информация</h5>
+                                <div class="custom-form-group custom-form-group--contacts">
+                                    <input type="text" name="email" class="custom-form-control" data-val="">
+                                    <span class="custom-input-placeholder">Email</span>
+                                    <span class="error_email"></span>
+                                </div>
+                                <div class="custom-form-group custom-form-group--contacts">
+                                    <input type="text" name="name" class="custom-form-control" data-val="">
+                                    <span class="custom-input-placeholder">Имя и фамилия</span>
+                                    <span class="error_name"></span>
+                                </div>
+                                <div class="custom-form-group custom-form-group--contacts">
+                                    <input type="text" name="email" class="custom-form-control" data-val="">
+                                    <span class="custom-input-placeholder">Город</span>
+                                    <span class="error_email"></span>
+                                </div>
+                                <a href="#review_thx" class="popup-modal">
+                                    <input type="submit" class="black-button" value="Опубликовать отзыв">
+                                </a>
+                                <div id="review_thx" class="review-greet white-popup-block mfp-hide">
+                                    <p><a class="popup-modal-dismiss" href="#"><img src="img/basket_close.svg" alt=""></a></p> 
+                                    <h3 class="review-greet__title">Отзыв успешно опубликован!</h3>
+                                    <p class="review-greet__description">Спасибо за обратную связь. Благодаря вашим отзывам мы становимся лучше</p>
+                                    <a href="" class="black-button">Вернуться на страницу отзывов</a>
+                                    <a href="" class="white-button">Перейти на главную</a>
+                                </div>
+                                <p class="review-modal__desc">Нажимая кнопку Подписаться, я даю согласие на обработку и передачу моих <a href="">персональных
+                                        данных</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="reviews__main container">
+                <div class="reviews__tabs shops__tabs">
+                    <ul class="reviews__links">
+                        <li class="chosen">Все отзывы <span>3453</span></li>
+                        <li>Положительные <span>3443</span></li>
+                        <li>Отрицательные <span>10</span></li>
+                    </ul>
+                    <div class="vertical-tabs-content-wrap">
+                        <div class="reviews-tabs-content active">
+                            <div class="reviews__info">
+                                <div class="reviews__block">
+                                    <div class="reviews__block-top">
+                                        <div class="reviews__block-about">
+                                            <p class="reviews__block-data">12.10.2020</p>
+                                            <p class="reviews__block-name">Маргарита Цельсова</p>
+                                            <p class="reviews__block-city">Санкт-Петербург</p>
+                                        </div>
+                                        <div class="reviews__block-raiting"><span>10</span></div>
+                                    </div>
+                                    <div class="reviews__block-content">
+                                        <p class="reviews__block-text">Заказывала доставку Почтой России: заказ пришёл в строк в отличном
+                                            состоянии.</p>
+                                        <p class="reviews__block-text">Понравилось качество материалов. По размеру подошло отлично!</p>
+                                    </div>
+                                    <button class="reviews__block-button">Ответ магазина</button>
+                                    <div class="reviews__block-answer">
+                                        <p class="reviews__block-text">Спасибо за обратную связь! Очень рады, что вам всё понравилось :)</p>
+                                    </div>
+                                </div>
+                                <div class="reviews__block">
+                                    <div class="reviews__block-top">
+                                        <div class="reviews__block-about">
+                                            <p class="reviews__block-data">10.09.2020</p>
+                                            <p class="reviews__block-name">Анна Калашникова</p>
+                                            <p class="reviews__block-city">Москва</p>
+                                        </div>
+                                        <div class="reviews__block-raiting"><span>9</span></div>
+                                    </div>
+                                    <div class="reviews__block-content">
+                                        <p class="reviews__block-text">Удобный костюмчик. Ткань плотная. На мой промежуточный размер
+                                            M-L подошли
+                                            М (L широкие в бедрах и длинные) Но вот талию можно было бы сделать пошире, не все
+                                            мы с идеальными формами.
+                                        </p>
+                                    </div>
+                                    <button class="reviews__block-button">Ответ магазина</button>
+                                    <div class="reviews__block-answer">
+                                        <p class="reviews__block-text">Спасибо за обратную связь! Очень рады, что вам всё понравилось :)</p>
+                                    </div>
+                                </div>
+                                <div class="reviews__block">
+                                    <div class="reviews__block-top">
+                                        <div class="reviews__block-about">
+                                            <p class="reviews__block-data">01.10.2020</p>
+                                            <p class="reviews__block-name">Анастасия Решетова</p>
+                                            <p class="reviews__block-city">Краснодар</p>
+                                        </div>
+                                        <div class="reviews__block-raiting"><span>10</span></div>
+                                    </div>
+                                    <div class="reviews__block-content">
+                                        <p class="reviews__block-text">Водолазка просто супер, особенно учитывая, что у меня есть такого
+                                            оттенка брючный
+                                            костюм и ваш кашемировый свитер. Простор для фантазии!!! А вот джемпер оказался немного иного
+                                            оттенка
+                                            и у горловины небольшая нестыковка нитки. Но качество шерсти не вызывает сомнений!!! Обожаю ваши
+                                            находки
+                                            и подачу изделий!!!</p>
+                                    </div>
+                                    <button class="reviews__block-button">Ответ магазина</button>
+                                    <div class="reviews__block-answer">
+                                        <p class="reviews__block-text">Спасибо за обратную связь! Очень рады, что вам всё понравилось :)</p>
+                                    </div>
+                                </div>
+                                <div class="reviews__block">
+                                    <div class="reviews__block-top">
+                                        <div class="reviews__block-about">
+                                            <p class="reviews__block-data">23.09.2020</p>
+                                            <p class="reviews__block-name">Анна Хилькевич</p>
+                                            <p class="reviews__block-city">Москва</p>
+                                        </div>
+                                        <div class="reviews__block-raiting"><span>8</span></div>
+                                    </div>
+                                    <div class="reviews__block-content">
+                                        <p class="reviews__block-text">Рубашка великолепна! </p>
+                                        <p class="reviews__block-text">Красивые перламутровые кнопкочки, плотная, при этом очень комфортная
+                                            джинса. На
+                                            42 и рост 170 вазмер взяла xs. </p>
+                                        <p class="reviews__block-text">Сидит как на модели. </p>
+                                    </div>
+                                    <button class="reviews__block-button">Ответ магазина</button>
+                                    <div class="reviews__block-answer">
+                                        <p class="reviews__block-text">Спасибо за обратную связь! Очень рады, что вам всё понравилось :)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-tabs-content">
+                            <div class="reviews__info">
+                                <div class="reviews__block">
+                                    <div class="reviews__block-top">
+                                        <div class="reviews__block-about">
+                                            <p class="reviews__block-data">12.10.2020</p>
+                                            <p class="reviews__block-name">Маргарита Цельсова</p>
+                                            <p class="reviews__block-city">Санкт-Петербург</p>
+                                        </div>
+                                        <div class="reviews__block-raiting"><span>10</span></div>
+                                    </div>
+                                    <div class="reviews__block-content">
+                                        <p class="reviews__block-text">Заказывала доставку Почтой России: заказ пришёл в строк в отличном
+                                            состоянии.</p>
+                                        <p class="reviews__block-text">Понравилось качество материалов. По размеру подошло отлично!</p>
+                                    </div>
+                                    <button class="reviews__block-button">Ответ магазина</button>
+                                    <div class="reviews__block-answer">
+                                        <p class="reviews__block-text">Спасибо за обратную связь! Очень рады, что вам всё понравилось :)</p>
+                                    </div>
+                                </div>
+                                <div class="reviews__block">
+                                    <div class="reviews__block-top">
+                                        <div class="reviews__block-about">
+                                            <p class="reviews__block-data">10.09.2020</p>
+                                            <p class="reviews__block-name">Анна Калашникова</p>
+                                            <p class="reviews__block-city">Москва</p>
+                                        </div>
+                                        <div class="reviews__block-raiting"><span>9</span></div>
+                                    </div>
+                                    <div class="reviews__block-content">
+                                        <p class="reviews__block-text">Удобный костюмчик. Ткань плотная. На мой промежуточный размер
+                                            M-L подошли
+                                            М (L широкие в бедрах и длинные) Но вот талию можно было бы сделать пошире, не все
+                                            мы с идеальными формами.
+                                        </p>
+                                    </div>
+                                    <button class="reviews__block-button">Ответ магазина</button>
+                                    <div class="reviews__block-answer">
+                                        <p class="reviews__block-text">Спасибо за обратную связь! Очень рады, что вам всё понравилось :)</p>
+                                    </div>
+                                </div>
+                                <div class="reviews__block">
+                                    <div class="reviews__block-top">
+                                        <div class="reviews__block-about">
+                                            <p class="reviews__block-data">01.10.2020</p>
+                                            <p class="reviews__block-name">Анастасия Решетова</p>
+                                            <p class="reviews__block-city">Краснодар</p>
+                                        </div>
+                                        <div class="reviews__block-raiting"><span>10</span></div>
+                                    </div>
+                                    <div class="reviews__block-content">
+                                        <p class="reviews__block-text">Водолазка просто супер, особенно учитывая, что у меня есть такого
+                                            оттенка брючный
+                                            костюм и ваш кашемировый свитер. Простор для фантазии!!! А вот джемпер оказался немного иного
+                                            оттенка
+                                            и у горловины небольшая нестыковка нитки. Но качество шерсти не вызывает сомнений!!! Обожаю ваши
+                                            находки
+                                            и подачу изделий!!!</p>
+                                    </div>
+                                    <button class="reviews__block-button">Ответ магазина</button>
+                                    <div class="reviews__block-answer">
+                                        <p class="reviews__block-text">Спасибо за обратную связь! Очень рады, что вам всё понравилось :)</p>
+                                    </div>
+                                </div>
+                                <div class="reviews__block">
+                                    <div class="reviews__block-top">
+                                        <div class="reviews__block-about">
+                                            <p class="reviews__block-data">23.09.2020</p>
+                                            <p class="reviews__block-name">Анна Хилькевич</p>
+                                            <p class="reviews__block-city">Москва</p>
+                                        </div>
+                                        <div class="reviews__block-raiting"><span>8</span></div>
+                                    </div>
+                                    <div class="reviews__block-content">
+                                        <p class="reviews__block-text">Рубашка великолепна! </p>
+                                        <p class="reviews__block-text">Красивые перламутровые кнопкочки, плотная, при этом очень комфортная
+                                            джинса. На
+                                            42 и рост 170 вазмер взяла xs. </p>
+                                        <p class="reviews__block-text">Сидит как на модели. </p>
+                                    </div>
+                                    <button class="reviews__block-button">Ответ магазина</button>
+                                    <div class="reviews__block-answer">
+                                        <p class="reviews__block-text">Спасибо за обратную связь! Очень рады, что вам всё понравилось :)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-tabs-content">
+                            <div class="reviews__info">
+                                <div class="reviews__block">
+                                    <div class="reviews__block-top">
+                                        <div class="reviews__block-about">
+                                            <p class="reviews__block-data">12.10.2020</p>
+                                            <p class="reviews__block-name">Маргарита Цельсова</p>
+                                            <p class="reviews__block-city">Санкт-Петербург</p>
+                                        </div>
+                                        <div class="reviews__block-raiting"><span>10</span></div>
+                                    </div>
+                                    <div class="reviews__block-content">
+                                        <p class="reviews__block-text">Заказывала доставку Почтой России: заказ пришёл в строк в отличном
+                                            состоянии.</p>
+                                        <p class="reviews__block-text">Понравилось качество материалов. По размеру подошло отлично!</p>
+                                    </div>
+                                    <button class="reviews__block-button">Ответ магазина</button>
+                                    <div class="reviews__block-answer">
+                                        <p class="reviews__block-text">Спасибо за обратную связь! Очень рады, что вам всё понравилось :)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+
+        </section>
+
+       
+    </main>
+
+    @@include('./templates/footer.html')
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/magnific.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/reviews.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/sticky.js"></script>
+    <script src="js/accordeon.js"></script>
+    <script src="js/shops.js"></script>
+
+</body>
+</html>

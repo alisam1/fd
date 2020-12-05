@@ -1,0 +1,60 @@
+.sidebar{
+    width: 20%;
+    position: fixed;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background: #ffffff;
+    height: calc(100%-400px);
+    padding-bottom: 120px;
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        display: none;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        display: none;
+    }
+    &__list
+    {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    &__item{
+        padding-bottom: 24px;
+        a{
+            font-family: 'Century Gothic';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #1B1B1B;
+            text-decoration: none;
+            position: relative;
+            top: -6px;
+        }
+        &.active{
+            position: relative;
+            padding-left: 50px;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 40px;
+                height: 1px;
+                background: #1B1B1B;
+                top: 5px;
+                left: 0;
+
+            }
+        }
+    }
+    &-top{
+        top:20px !important;
+    }
+    &.bottom{
+        position: absolute;
+        bottom: 0;
+        top: auto;
+        width: 290px;
+    }
+}

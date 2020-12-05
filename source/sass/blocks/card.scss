@@ -1,0 +1,260 @@
+.card{
+    //width: 285px;
+    width: 32%;
+    &--catalog{
+        margin-right: 2%;
+        margin-bottom: 50px; 
+        &:nth-child(3n)
+        {
+            margin-right: 0;
+        }
+         @media screen and (min-width: 320px) and (max-width: 767px) {
+               margin-bottom: 35px;
+            }
+    }
+    &__img{
+        position: relative;
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                height: 220px;
+            }
+        }
+        &-product{
+            width: 320px;
+            @media screen and (min-width: 768px) and (max-width: 1279px) {
+                width: 100%;
+            }
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+        &-disc{
+            position: absolute;
+            display: flex;
+            top: 10px;
+            width: 75%;
+            height: auto;
+            justify-content: flex-start;
+            left: 10px;
+            span {
+                position: relative;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                color: #313131;
+                background: #AFD83B;
+                border-radius: 2px;
+                padding-right: 14px;
+                padding-left: 14px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                box-sizing: border-box;
+                margin-right: 10px;
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    padding-right: 9px;
+                    padding-left: 9px;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                    font-size: 9px;
+                    line-height: 12px;
+                    margin-right: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                width: 85%;
+                top: 5px;
+                left: 5px;
+                flex-wrap: wrap;
+            }
+        }
+        &--like{
+            position: absolute;
+            background-image: url("../img/like.svg");
+            width: 18px;
+            height: 16px;
+            display: inline-block;
+            display: inline-block;
+            box-sizing: border-box;
+            top:17px;
+            right: 17px;
+            cursor: pointer;
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                    top:7px;
+                    right: 5px;
+                }
+        }
+        &--like.voted{
+            position: absolute;
+            background-image: url("../img/like_active.svg");
+            width: 18px;
+            height: 16px;
+            display: inline-block;
+            box-sizing: border-box;
+            top:17px;
+            right: 17px;
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                    top:5px;
+                    right: 5px;
+                }
+        }
+        &--like-black{
+            position: absolute;
+            background-image: url("../img/like_active.svg");
+            width: 18px;
+            height: 16px;
+            display: inline-block;
+            display: inline-block;
+            box-sizing: border-box;
+            top: 17px;
+            right: 0px;
+            cursor: pointer;
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                    top:7px;
+                    right: 5px;
+                }
+        }
+        &--like-black.voted{
+            position: absolute;
+            background-image: url("../img/like_green.svg");
+            width: 18px;
+            height: 16px;
+            display: inline-block;
+            box-sizing: border-box;
+            top: 17px;
+            right: 0px;
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                    top:5px;
+                    right: 5px;
+                }
+        }
+        &--collection{
+            img{
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                   height: 110px;
+                }
+            }
+        }
+        &--about{
+            img{
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                   height: 170px;
+                }
+            }
+        }
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            flex-direction: column;
+        }
+        &--about{
+            flex-direction: column;
+        }
+    }
+    &__about{
+        &-title{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 19px;
+            color: #1B1B1B;
+            margin: 0;
+            padding: 0;
+            padding-top: 18px;
+            padding-bottom: 8px;
+        }
+        &-description{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 16px;
+            color: #575757;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    &__content{
+        width: 75%;
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__name{
+        font-family: 'Century Gothic';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        color: #1B1B1B;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 12px;
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+    &__price{
+        font-family: 'Century Gothic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: flex-end;
+        text-align: right;
+        color: #313131;
+    }
+    &__colors{
+        display: flex;
+        flex-direction: row;
+        span{
+            display: block;
+            width: 12px;
+            height: 12px;
+            margin-right: 6px;
+            border: 1px solid transparent;
+            &.red{
+                background-color: #C00412;
+            }
+            &.white{
+                background-color: #fff;
+                border: 1px solid #BDBDBD;
+            }
+            &.black{
+                background-color: #000;
+            }
+            &.aqua{
+                background-color:#8FDFE0;
+            }
+            &.yellow{
+                background-color:#FFD46E;
+            }
+            
+        }
+    }
+    &__slide{
+        a{
+        text-decoration: none;
+    } 
+    }
+
+     a{
+        text-decoration: none;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 48%;
+    }
+}

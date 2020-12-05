@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <title>FreshDress</title>
+</head>
+<body>
+
+    @@include('./templates/header.html')
+
+    <main>
+
+        <!-- Приветственная модалка -->
+
+        <div id="greeting-popup" class="greeting_modal">
+            <div class="greeting_modal-close">
+                <img src="img/basket_close.svg" alt="close">
+            </div>
+            <div class="greeting_modal-logo">
+                <img src="img/logo_mobile.svg" alt="logo_mobile">
+            </div>
+            <div class="greeting_modal-img">
+                <img src="img/top@2x.png" alt="">
+            </div>
+            <h3 class="greeting_modal-title">Осенняя подборка в вашей почте!</h3>
+            <p class="greeting_modal-description">Получите на почту осеннюю капсулу от Fresh Dress и вдохновитьсь на новые образы</p>
+            <div class="greeting_modal-form">
+                <form action="" class="footer__form custom-form">
+                    <div class="custom-form-group custom-form-group--footer">
+                        <input type="email" name="email" class="custom-form-control error" data-val="">
+                        <span class="custom-input-placeholder">Укажите ваш email</span>
+                        <span class="error_name error">Не указан Email</span>
+                    </div>
+                    <input class="greeting_modal-button" type="submit" value="Подписаться">
+                </form>
+                <p class="greeting_modal-alarm">Нажимая кнопку Подписаться, я даю согласие на обработку и передачу моих <a href="">персональных данных</a></p>
+            </div>
+        </div>
+
+
+        <a href="">
+            <section class="top">
+                    <h1 class="top__title">NEW AUTUMN COLLECTION/20</h1>
+                    <div class="top__link">
+                        <img src="/img/mobile_line.svg" alt="mobile_line">
+                        <object>
+                            <a href="/">Посмотреть</a>
+                        </object>
+                    </div>
+            </section>
+        </a>
+
+        <section class="nav">
+
+            <nav class="nav-bottom">
+                <ul class="nav-bottom__list container">
+                    <div class="nav-bottom__info">
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">New collection</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">скоро в продаже</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">аксессуары</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">блузы и рубашки</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">комбинезоны</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">брюки</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">верхняя одежда</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">джемпера и свитера</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">жилеты</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">боди</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">костюмы</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">платья</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">туники</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">топы</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">купальники</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">юбки</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">discount</a></div>
+                           <div class="nav-bottom__slide nav-bottom__item"><a href="">by botanovna</a></div>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+
+        </section>
+
+        <section class="collection container">
+
+            <div class="collection__card">
+                <a href="">
+                    <p class="collection__mark">lookbook</p>
+                    <h3 class="collection__title">Summer and sky</h3>
+                    <div class="collection__photo"><img src="/img/collection_1.png" alt="collection_1"></div>
+                </a>
+            </div>
+
+            <div class="collection__card">
+                <a href="">
+                    <p class="collection__mark">collection</p>
+                    <h3 class="collection__title">by botanovna</h3>
+                    <div class="collection__photo"><img src="/img/collection_2.png" alt="collection_2"></div>
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="bestsellers">
+
+            <div class="bestsellers__top">
+
+                <h3 class="bestsellers__title">Bestsellers</h3>
+                <div class="bestsellers__arrows">
+                    <div class="bestsellers__arr swiper-button-next"></div>
+                    <div class="bestsellers__arr swiper-button-prev"></div>
+                </div>
+
+            </div>
+
+            <div class="bestsellers__slider">
+
+                <div id="swiper_best" class="swiper-container">
+
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide card__slide">
+                        <a href="">
+                            <div class="card__img">
+                                <img src="/img/best_1.png" alt="">
+                                <span class="card__img--best">Best</span>
+                                <span class="card__img--like"></span>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__content">
+                                    <h6 class="card__name">Платье футляр горошек, красное</h6>
+                                    <div class="card__colors">
+                                        <span class="red"></span>
+                                    </div>
+                                </div>
+                                <div class="card__all-price">
+                                    <div class="card__price">6900 р.</div>
+                                    <div class="card__price basket__price--old">9500 р.</div>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+
+                      <div class="swiper-slide card__slide">
+                        <a href="">
+                            <div class="card__img">
+                                <img src="/img/best_2.png" alt="">
+                                <span class="card__img--best">Best</span>
+                                <span class="card__img--like"></span>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__content">
+                                    <h6 class="card__name">Платье "Париж" миди, бирюзовый</h6>
+                                    <div class="card__colors">
+                                        <span class="white"></span>
+                                        <span class="black"></span>
+                                        <span class="aqua"></span>
+                                        <span class="yellow"></span>
+                                    </div>
+                                </div>
+                                <div class="card__all-price">
+                                    <div class="card__price">6900 р.</div>
+                                    <div class="card__price basket__price--old">9500 р.</div>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+
+                      <div class="swiper-slide card__slide">
+                        <a href="">
+                            <div class="card__img">
+                                <img src="/img/best_3.png" alt="">
+                                <span class="card__img--best">Best</span>
+                                <span class="card__img--like"></span>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__content">
+                                    <h6 class="card__name">Платье "Париж" миди, бирюзовый</h6>
+                                    <div class="card__colors">
+                                        <span class="aqua"></span>
+                                        <span class="white"></span>
+                                        <span class="black"></span>
+                                        <span class="yellow"></span>
+                                    </div>
+                                </div>
+                                <div class="card__all-price">
+                                    <div class="card__price">6900 р.</div>
+                                    <div class="card__price basket__price--old">9500 р.</div>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+
+                      <div class="swiper-slide card__slide">
+                        <a href="">
+                            <div class="card__img">
+                                <img src="/img/best_4.png" alt="">
+                                <span class="card__img--best">Best</span>
+                                <span class="card__img--like"></span>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__content">
+                                    <h6 class="card__name">Силуэтное платье-бюстье, чёрное</h6>
+                                    <div class="card__colors">
+                                        <span class="white"></span>
+                                        <span class="black"></span>
+                                    </div>
+                                </div>
+                                <div class="card__all-price">
+                                    <div class="card__price">6900 р.</div>
+                                    <div class="card__price basket__price--old">9500 р.</div>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+
+                     <div class="swiper-slide card__slide">
+                        <a href="">
+                            <div class="card__img">
+                                <img src="/img/best_1.png" alt="">
+                                <span class="card__img--best">Best</span>
+                                <span class="card__img--like"></span>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__content">
+                                    <h6 class="card__name">Платье футляр горошек, красное</h6>
+                                    <div class="card__colors">
+                                        <span class="red"></span>
+                                    </div>
+                                </div>
+                                <div class="card__all-price">
+                                    <div class="card__price">6900 р.</div>
+                                    <div class="card__price basket__price--old">9500 р.</div>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+
+                      <div class="swiper-slide card__slide">
+                        <a href="">
+                            <div class="card__img">
+                                <img src="/img/best_2.png" alt="">
+                                <span class="card__img--best">Best</span>
+                                <span class="card__img--like"></span>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__content">
+                                    <h6 class="card__name">Платье "Париж" миди, бирюзовый</h6>
+                                    <div class="card__colors">
+                                        <span class="white"></span>
+                                        <span class="black"></span>
+                                        <span class="aqua"></span>
+                                        <span class="yellow"></span>
+                                    </div>
+                                </div>
+                                <div class="card__all-price">
+                                    <div class="card__price">6900 р.</div>
+                                    <div class="card__price basket__price--old">9500 р.</div>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+
+                      <div class="swiper-slide card__slide">
+                        <a href="">
+                            <div class="card__img">
+                                <img src="/img/best_3.png" alt="">
+                                <span class="card__img--best">Best</span>
+                                <span class="card__img--like"></span>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__content">
+                                    <h6 class="card__name">Платье "Париж" миди, бирюзовый</h6>
+                                    <div class="card__colors">
+                                        <span class="aqua"></span>
+                                        <span class="white"></span>
+                                        <span class="black"></span>
+                                        <span class="yellow"></span>
+                                    </div>
+                                </div>
+                                <div class="card__all-price">
+                                    <div class="card__price">6900 р.</div>
+                                    <div class="card__price basket__price--old">9500 р.</div>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      
+                      <div class="swiper-slide card__slide">
+                        <a href="">
+                            <div class="card__img">
+                                <img src="/img/best_4.png" alt="">
+                                <span class="card__img--best">Best</span>
+                                <span class="card__img--like"></span>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__content">
+                                    <h6 class="card__name">Силуэтное платье-бюстье, чёрное</h6>
+                                    <div class="card__colors">
+                                        <span class="white"></span>
+                                        <span class="black"></span>
+                                    </div>
+                                </div>
+                                <div class="card__all-price">
+                                    <div class="card__price">6900 р.</div>
+                                    <div class="card__price basket__price--old">9500 р.</div>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <a href="">
+            <section class="discount">
+                    <h3 class="discount__title">discount</h3>
+                    <p class="discount__link">
+                        <object>
+                            <a href="/">Посмотреть</a>
+                        </object>
+                    </p>
+            </section>
+        </a>
+    </main>
+
+    @@include('./templates/footer.html')
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/magnific.js"></script>
+    <script src="js/accordeon.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/sticky.js"></script>
+</body>
+</html>
